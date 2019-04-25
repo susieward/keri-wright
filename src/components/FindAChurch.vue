@@ -170,7 +170,7 @@ grid-gap: 20px;
   grid-auto-rows: auto;
   grid-template-columns: 1fr;
   justify-content: center;
-    width: 80%;
+    width: 50%;
     margin: auto;
     grid-gap: 50px;
 }
