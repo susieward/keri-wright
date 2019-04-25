@@ -195,7 +195,7 @@ methods: {
 #app {
   display: grid;
   min-height: 100vh;
-  width: 100vw;
+  min-width: 100vw;
   font-family: 'Montserrat Regular';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
