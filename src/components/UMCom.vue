@@ -1,71 +1,86 @@
 <template>
   <div class="umcom">
-      <div class="hero">
-        <span class="hero-text">I'm a UX designer based in Nashville, catchy tagline</span>
+      <div class="umc">
+        <span class="umc-text">PROJECTS I’VE DESIGNED IN MY TIME AT UNITED METHODIST COMMUNICATIONS</span>
       </div>
 
-      <div class="projects">
+      <div class="umc-line">
+        <div class="umc-line-item1">
 
-          <div class="project">
-            <div class="img-container">
-              <router-link to="/find-a-church"><img class="proj-img" src="./images/umcom.jpg" /></router-link>
+        </div>
+
+        <div class="umc-line-item2">
+
+        </div>
+
+      </div>
+
+      <div class="work">
+          <div class="work-container">
+
+
+          <div class="work-item">
+            <div class="work-img-container">
+              <router-link to="/find-a-church"><img class="work-img" src="./images/umcom.jpg" /></router-link>
             </div>
 
-            <div class="proj-title">
+            <div class="work-title">
               Find A Church
             </div>
 
-            <div class="proj-desc">
+            <div class="work-desc">
               A search engine project in development that helps people find a United Methodist Church near them.
             </div>
 
           </div>
 
-          <div class="project">
-            <div class="img-container">
-              <router-link to="/source"><img class="proj-img" src="./images/source.png" /></router-link>
+          <div class="work-item">
+            <div class="work-img-container">
+              <router-link to="/sitecore"><img class="work-img" src="./images/resource.jpg" /></router-link>
             </div>
 
-            <div class="proj-title">
-              The Source
-            </div>
-
-            <div class="proj-desc">
-              A Subscription Landing Page made for United Methodist Communications
-            </div>
-
-          </div>
-
-          <div class="project">
-            <div class="img-container">
-              <router-link to="/what-we-do"><img class="proj-img" src="./images/what.png" /></router-link>
-            </div>
-
-            <div class="proj-title">
-              What We Do
-            </div>
-
-            <div class="proj-desc">
-            A Landing Page made for United Methodist Communications
-            </div>
-
-          </div>
-
-          <div class="project">
-            <div class="img-container">
-              <router-link to="/sitecore"><img class="proj-img" src="./images/resource.jpg" /></router-link>
-            </div>
-
-            <div class="proj-title">
+            <div class="work-title">
               Sitecore Training
             </div>
 
-            <div class="proj-desc">
+            <div class="work-desc">
               A Wordpress site in production created for training the employees at United Methodist Communications on our CMS Platform.
             </div>
 
           </div>
 
+          <div class="work-item">
+            <div class="work-img-container">
+              <router-link to="/source"><img class="work-img" src="./images/source.png" /></router-link>
+            </div>
+
+            <div class="work-title">
+              The Source
+            </div>
+
+            <div class="work-desc">
+              A Subscription Landing Page made for United Methodist Communications
+            </div>
+
+          </div>
+
+          <div class="work-item">
+            <div class="work-img-container">
+              <router-link to="/what-we-do"><img class="work-img" src="./images/what.png" /></router-link>
+            </div>
+
+            <div class="work-title">
+              What We Do
+            </div>
+
+            <div class="work-desc">
+            A Landing Page made for United Methodist Communications
+            </div>
+
+          </div>
+
+      
+        </div>
       </div>
 
   </div>
@@ -83,55 +98,84 @@ export default {
 .umcom {
 padding: 0;
 display: grid;
-grid-template-areas: 'hero'
-                      'projects';
-grid-gap: 50px;
-padding-bottom: 100px;
+grid-template-areas: 'umc umc'
+                      'line line'
+                      'work work';
+
+justify-content: center;
+padding-bottom: 200px;
 }
 
 
-.hero {
-  grid-area: hero;
-  display: grid;
+
+.umc-line {
+  grid-area: line;
+display: grid;
+grid-template-columns: auto auto;
   justify-content: center;
-  align-content: center;
-  text-align: center;
-  min-height: 500px;
-max-width: 1000px;
-  margin: auto;
-  margin-bottom: 50px;
-
 }
 
-.hero-text {
-  font-family: 'Montserrat Black';
+.umc-line-item1 {
+height: 80px;
+  border-right: 2px solid #fff;
+  margin: auto;
+  width: 50px;
+}
+
+.umc-line-item2 {
+  height: 50px;
+
+    width: 50px;
+}
+
+
+.umc {
+  grid-area: umc;
+  display: grid;
+  align-content: flex-start;
+  justify-content: center;
+  min-height: 500px;
+  padding-top: 14%;
+  padding-left: 25px;
+}
+
+.umc-text {
+  font-family: 'Montserrat Regular';
   color: #fff;
   font-size: 40px;
-  line-height: 53px;
+  line-height: normal;
   text-transform: uppercase;
+  margin: auto;
+  padding-right: 250px;
+  padding-left: 30px;
+}
+
+.work {
+  grid-area: work;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  max-width: 700px;
   margin: auto;
 }
 
-.projects {
-  grid-area: projects;
+.work-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
-  min-height: 700px;
-  max-width: 700px;
-  margin-right: auto;
-  margin-left: auto;
+  grid-auto-rows: auto;
+  width: 100%;
   grid-gap: 150px;
-  padding-bottom: 100px;
+  margin-top: 50px;
+
 }
 
-.project {
+.work-item {
   display: grid;
   grid-template-rows: auto auto auto;
   grid-gap: 20px;
 }
 
-.img-container {
+.work-img-container {
 display: grid;
 max-height: 500px;
 overflow: hidden;
@@ -141,15 +185,15 @@ overflow: hidden;
   background-color: #FDAFA4;
 }
 
-.proj-img {
+.work-img {
 width: 100%;
 height:auto;
 object-fit: cover;
 
 }
 
-.proj-title {
-  font-family: 'Montserrat Black';
+.work-title {
+  font-family: 'Montserrat Regular';
   color: #fff;
   font-size: 32px;
   line-height: normal;
@@ -158,7 +202,7 @@ object-fit: cover;
   text-transform: uppercase;
 }
 
-.proj-desc {
+.work-desc {
   font-family: 'Montserrat Regular';
   color: #fff;
 
@@ -166,3 +210,5 @@ object-fit: cover;
   line-height: 22px;
   line-height: normal;
 }
+
+</style>

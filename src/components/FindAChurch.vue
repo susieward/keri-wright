@@ -114,7 +114,7 @@ max-width: 800px;
 }
 
 .find-title {
-  font-family: 'Montserrat Black';
+  font-family: 'Montserrat Regular';
   color: #000;
   text-transform: uppercase;
   font-size: 34px;

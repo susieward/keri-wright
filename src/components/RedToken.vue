@@ -24,9 +24,6 @@
       </div>
     </div>
 
-    <div @click="scrollClick" class="scroll-top">
-      <svg  class="icon icon-chevron-top" viewBox="0 0 32 32" aria-hidden="true"><path d="M15.997 13.374l-7.081 7.081L7 18.54l8.997-8.998 9.003 9-1.916 1.916z"/></svg>
-    </div>
   </div>
 
 </template>

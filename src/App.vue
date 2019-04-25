@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
+  <div id="app" :class="{ 'app-hide' : hideSides}">
 
-      <div ref="contactBar" class="contact">
+      <div v-show="isContactOpen === true" ref="contactBar" class="contact" :class="{ 'contact-dark' : hideSides}">
         <div class="contact-left">
           <p>
             EMAIL: <span><a href="mailto:keriannwright@gmail.com">keriannwright@gmail.com</a></span>
@@ -19,7 +19,7 @@ cool project you need designed please get in touch!
           </p>
         </div>
 
-        <div class="contact-close">
+        <div class="contact-close" :class="{ 'contact-close-dark' : hideSides }">
           <p @click="closeContact">
             &#215;
           </p>
@@ -30,24 +30,25 @@ cool project you need designed please get in touch!
     <div class="header" ref="header" :class="{ 'white-bg' : showWhite} ">
       <span class="header-text">lovely to meet you</span>
       <div class="links">
+        <span v-show="workPages"><router-link to="/umcom">work projects</router-link></span>
         <span @click="showContact">contact</span>
         <span><router-link to="/">home</router-link></span>
       </div>
     </div>
 
-    <div class="left">
-      <span class="left-text">ux design</span>
+    <div class="left" v-show="sidesVisible">
+      <span class="left-text"><p>ux design</p></span>
     </div>
 
 <div class="main">
     <router-view></router-view>
     </div>
 
-    <div class="right">
+    <div class="right" v-show="sidesVisible">
       <span class="right-text">keri wright</span>
     </div>
 
-    <div class="footer">
+    <div class="footer" :class="{ 'footer-dark' : hideSides }">
       <div class="footer-top">
 
 
@@ -91,6 +92,23 @@ data() {
 },
 
 computed: {
+
+  workPages(){
+
+    return this.$route.name !== 'RedToken' && this.$route.name !== 'Home' && this.$route.name !== 'UMCom'
+
+  },
+
+  sidesVisible(){
+    return this.$route.name === 'Home' || this.$route.name === 'UMCom';
+
+  },
+
+  hideSides(){
+      return this.$route.name === 'RedToken' || this.$route.name === 'FindAChurch' || this.$route.name === 'Source' || this.$route.name === 'Sitecore' || this.$route.name === 'WhatWeDo'
+
+  },
+
   showWhite(){
     return this.$route.name !== 'Home' && this.$route.name !== 'UMCom'
   },
@@ -130,13 +148,22 @@ methods: {
   grid-template-columns: auto 1fr auto;
   height: 0px;
   color: #000;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat Regular';
+}
+
+.contact-dark {
+  background-color: #000;
+  color: #fff;
 }
 
 .contact-close {
   width: 50px;
   font-size: 30px;
   color: #444;
+}
+
+.contact-close-dark {
+  color: #fff;
 }
 
 .contact-close p:hover {
@@ -185,12 +212,22 @@ methods: {
                       'footer footer footer';
 }
 
+.app-hide {
+
+  grid-template-areas:
+                        'contact contact contact'
+                        'header header header'
+                      'main main main'
+                      'main main main'
+                      'footer footer footer';
+}
+
 .header {
 grid-area: header;
 display: grid;
 width: 100vw;
 grid-template-columns: auto auto;
-padding: 30px 85px 30px 85px;
+padding: 40px 80px 30px 95px;
 background-color: #000;
 align-content: center;
 
@@ -206,19 +243,23 @@ align-content: center;
 }
 
 .header-text {
-font-family: 'Montserrat Medium';
-font-size: 20px;
+font-family: 'Montserrat';
+font-size: 16px;
 text-transform: uppercase;
 }
 
 .links {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   grid-gap: 40px;
   justify-content: flex-end;
   text-transform: uppercase;
+  font-family: 'Montserrat Regular';
   font-size: 16px;
 
+}
+
+.links span {
 }
 
 .links span:hover {
@@ -231,12 +272,16 @@ text-transform: uppercase;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
+  font-family: 'Montserrat Regular';
 }
 
 .main {
 grid-area: main;
 
+}
 
+.hide {
+  display: none;
 }
 
 .left {
@@ -245,14 +290,25 @@ height: 100vh;
 
 display: grid;
 justify-content: center;
-align-content: center;
+align-content: flex-start;
+margin-top: 35vh;
+max-width: 85px;
+
 }
 
 .left-text {
   font-size: 16px;
   text-transform: uppercase;
-  writing-mode: vertical-lr;
-text-orientation: mixed;
+font-family: 'Overpass Mono Bold';
+margin-left: -6px;
+
+}
+
+.left-text p {
+transform: rotate(-90deg);
+padding: 0;
+margin: 0;
+
 }
 
 .right {
@@ -261,7 +317,9 @@ height: 100vh;
 display: grid;
 justify-content: center;
 align-content: center;
-
+align-content: flex-start;
+margin-top: 29.7vh;
+width: 85px;
 }
 
 .right-text {
@@ -269,6 +327,7 @@ align-content: center;
   text-transform: uppercase;
   writing-mode: vertical-rl;
 text-orientation: mixed;
+font-family: 'Overpass Mono Bold';
 }
 
 .footer {
@@ -278,7 +337,12 @@ text-orientation: mixed;
   background-color: #FFFCF2;
   grid-template-rows: 1fr auto;
   color: #000;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat Regular';
+}
+
+.footer-dark {
+  background-color: #000;
+  color: #fff;
 }
 
 .footer-top {
