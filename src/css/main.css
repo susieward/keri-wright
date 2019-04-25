@@ -8,6 +8,11 @@ font-family: "Montserrat Black";
   src: url('./fonts/Montserrat-Black.woff');
 }
 
+@font-face {
+font-family: "Montserrat Medium";
+  src: url('./fonts/Montserrat-Medium.woff');
+}
+
 * {
   box-sizing: border-box;
 }
@@ -83,7 +88,7 @@ margin: auto;
 
 
 .page-title-text {
-  font-family: 'Montserrat Black';
+  font-family: 'Montserrat Regular';
   color: #000;
   text-transform: uppercase;
   font-size: 32px;

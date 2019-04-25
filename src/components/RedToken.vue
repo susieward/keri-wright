@@ -1,5 +1,5 @@
 <template>
-  <div class="red-token">
+  <div class="red-token" ref="test">
     <div class="red-token-container">
 
       <div class="red-token-title">
@@ -24,12 +24,25 @@
       </div>
     </div>
 
+    <div @click="scrollClick" class="scroll-top">
+      <svg  class="icon icon-chevron-top" viewBox="0 0 32 32" aria-hidden="true"><path d="M15.997 13.374l-7.081 7.081L7 18.54l8.997-8.998 9.003 9-1.916 1.916z"/></svg>
+    </div>
   </div>
 
 </template>
 <script>
 export default {
-  name: 'RedToken'
+  name: 'RedToken',
+
+
+  methods: {
+
+    scrollClick: function(){
+
+        this.$refs.test.scrollTop = 0;
+    }
+
+  }
 }
 
 </script>
@@ -40,6 +53,7 @@ display: grid;
 width: 100vw;
 align-content: flex-start;
 background-color:#fff;
+position: relative;
 }
 
 .red-token-container {
@@ -84,6 +98,25 @@ grid-gap: 50px;
 .red-img {
   max-width: 75%;
   margin: auto;
+}
+
+
+.scroll-top {
+position: fixed;
+right: 0;
+bottom: 0;
+margin-right: 3%;
+border: 1px solid #222;
+}
+
+.icon {
+  display:inline-block;
+  fill: #707070;
+  margin-top: -0.2em;
+  width: 6em;
+  height: 4.5em;
+  vertical-align: middle;
+  overflow: hidden;
 }
 
 

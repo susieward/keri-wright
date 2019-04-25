@@ -1,42 +1,42 @@
 <template>
   <div class="home">
       <div class="hero">
-        <span class="hero-text">I'm a UX designer based in Nashville, catchy tagline</span>
+        <div class="hero-text">Hi, I'm Keri.<br />
+        I combine creativity with technology, and help humans be less frustrated along the way.</div>
       </div>
 
+        <div class="line">
+          <div class="line-item1">
+
+          </div>
+
+          <div class="line-item2">
+
+          </div>
+
+        </div>
       <div class="projects">
+        <div class="proj-top">
+          <p>
+            I’m a UX designer currently working for United Methodist Communications in Nashville, Tennessee. My passions lie in bringing visions to life and creating a more positive environment for users online.
+          </p>
+        </div>
 
-          <div class="project">
-            <div class="img-container" id="redtoken">
-              <router-link to="/redtoken"><img class="proj-img" src="./images/transptam.png" /></router-link>
+        <div class="proj-bottom">
+
+          <div class="proj-col1">
+            <div class="proj-title1">
+              a personal project
             </div>
-
-            <div class="proj-title">
-              Red Token Project
-            </div>
-
-            <div class="proj-desc">
-              A personal project I'm currently working on for a non-profit that provides tampons to homeless women.
-            </div>
-
           </div>
 
-          <div class="project">
-            <div class="img-container">
-              <router-link to="/umcom"><img class="proj-img" src="./images/umcom.jpg" /></router-link>
+          <div class="proj-col2">
+            <div class="proj-title2">
+              work projects
             </div>
-
-            <div class="proj-title">
-              United Methodist<br />Communications
-            </div>
-
-            <div class="proj-desc">
-              A few of my projects while working at UMCOM.<br />
-              We are currently building a new site and these projects are all in development.
-              Links will be provided once the site is live.
-            </div>
-
           </div>
+
+        </div>
 
       </div>
 
@@ -55,46 +55,134 @@ export default {
 .home {
 padding: 0;
 display: grid;
-grid-template-areas: 'hero'
-                      'projects';
+grid-template-areas: 'hero hero'
+                      'line line'
+                      'projects projects';
 padding-bottom: 100px;
+justify-content: center;
 }
 
 
 .hero {
   grid-area: hero;
   display: grid;
-  justify-content: center;
   align-content: center;
-  text-align: center;
+  justify-content: center;
   min-height: 500px;
+
 max-width: 1000px;
-  margin: auto;
-    margin-bottom: 50px;
+
 
 
 }
 
 .hero-text {
-  font-family: 'Montserrat Black';
+  font-family: 'Montserrat';
   color: #fff;
   font-size: 40px;
-  line-height: 53px;
+  line-height: normal;
   text-transform: uppercase;
   margin: auto;
+  padding-right: 200px;
+  padding-left: 30px;
+
+
 }
+
+.line {
+  grid-area: line;
+display: grid;
+grid-template-columns: auto auto;
+  justify-content: center;
+}
+
+.line-item1 {
+height: 80px;
+  border-right: 2px solid #fff;
+  margin: auto;
+  width: 50px;
+}
+
+.line-item2 {
+  height: 50px;
+
+    width: 50px;
+}
+
+
+
+
 
 .projects {
   grid-area: projects;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
-  min-height: 700px;
-  max-width: 700px;
-  margin-right: auto;
+  grid-template-rows: 1fr 1fr;
+  max-width: 1000px;
+  min-height: 400px;
+
+}
+
+.proj-top {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.proj-top p {
+  text-align: center;
+  margin: auto;
+  color: #959595;
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.proj-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+padding-left: 20px;
+padding-right: 20px;
+}
+
+.proj-col1 {
+  display: grid;
+  justify-content: flex-start;
+}
+
+.proj-col2 {
+  display: grid;
+  justify-content: flex-end;
+}
+
+.proj-title1 {
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-size: 27px;
+}
+
+.proj-title1:after {
+  content: "";
+  display: block;
+
+  width: 40%;
+  padding-top: 15px;
+  border-bottom: 4px solid #fff;
+}
+
+.proj-title2 {
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-size: 27px;
+}
+
+.proj-title2:after {
+  content: "";
+  display: block;
+  margin: 0;
   margin-left: auto;
-  grid-gap: 150px;
-padding-bottom: 100px;
+  width: 50%;
+  padding-top: 15px;
+  border-bottom: 4px solid #fff;
 }
 
 .project {
@@ -120,15 +208,6 @@ object-fit: cover;
 
 }
 
-.proj-title {
-  font-family: 'Montserrat Black';
-  color: #fff;
-  font-size: 32px;
-  line-height: normal;
-  padding: 0;
-  margin: 0;
-  text-transform: uppercase;
-}
 
 .proj-desc {
   font-family: 'Montserrat Regular';
