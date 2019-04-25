@@ -69,6 +69,7 @@ grid-template-areas: 'hero hero'
                       'line line'
                       'projects projects';
 padding-bottom: 100px;
+max-width: 1000px;
 
 }
 
@@ -78,8 +79,8 @@ padding-bottom: 100px;
   display: grid;
   align-content: center;
   justify-content: center;
-  min-height: 500px;
 
+  min-height: 80vh;
 
 
 
