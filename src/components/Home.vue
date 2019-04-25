@@ -69,7 +69,7 @@ grid-template-areas: 'hero hero'
                       'line line'
                       'projects projects';
 padding-bottom: 100px;
-max-width: 1000px;
+max-width: 1200px;
 
 }
 
@@ -129,6 +129,7 @@ height: 80px;
   grid-template-rows: 1fr 1fr;
 
   min-height: 400px;
+
 
 
 }

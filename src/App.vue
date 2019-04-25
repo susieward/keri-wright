@@ -320,6 +320,7 @@ align-content: center;
 align-content: flex-start;
 margin-top: 29.7vh;
 width: 85px;
+right: 0;
 }
 
 .right-text {
