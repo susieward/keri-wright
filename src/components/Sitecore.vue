@@ -14,6 +14,12 @@
       <div class="page-main">
         <div class="page-main-container">
 
+            <div class="sitecore-images-container">
+              <img class="sitecore-img" src="./images/sitecore1.png" />
+
+              <img class="sitecore-img" src="./images/sitecore2.png" />
+            </div>
+
         </div>
       </div>
     </div>
@@ -29,5 +35,15 @@ export default {
 </script>
 <style>
 
+.sitecore-images-container {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: 1fr;
+}
+
+.sitecore-img {
+  max-width: 75%;
+  margin: auto;
+}
 
 </style>
