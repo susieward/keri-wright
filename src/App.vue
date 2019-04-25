@@ -41,7 +41,11 @@ cool project you need designed please get in touch!
     </div>
 
 <div class="main">
+  <div class="content">
+
+
     <router-view></router-view>
+      </div>
     </div>
 
     <div class="right" v-show="sidesVisible">
@@ -195,14 +199,15 @@ methods: {
 #app {
   display: grid;
   min-height: 100vh;
-  min-width: 100vw;
+  min-width: 100%;
+  position: relative;
   font-family: 'Montserrat Regular';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smoothing: antialiased;
   color: #fff;
   background-color: #000;
-  align-content: flex-start;
+
 
   grid-template-areas:
                         'contact contact contact'
@@ -230,7 +235,7 @@ grid-template-columns: auto auto;
 padding: 40px 80px 30px 95px;
 background-color: #000;
 align-content: center;
-
+position: relative;
 }
 
 .white-bg {
@@ -277,6 +282,15 @@ text-transform: uppercase;
 
 .main {
 grid-area: main;
+display: grid;
+
+position: relative;
+}
+
+.content {
+
+  display: grid;
+justify-content: center;
 
 }
 
@@ -293,6 +307,7 @@ justify-content: center;
 align-content: flex-start;
 margin-top: 35vh;
 max-width: 85px;
+position: relative;
 
 }
 
@@ -319,8 +334,10 @@ justify-content: center;
 align-content: center;
 align-content: flex-start;
 margin-top: 29.7vh;
-width: 85px;
-right: 0;
+width: 80px;
+margin-left: auto;
+margin-right: 0;
+
 }
 
 .right-text {

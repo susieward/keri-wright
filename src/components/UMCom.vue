@@ -79,7 +79,7 @@
 
           </div>
 
-      
+
         </div>
       </div>
 
@@ -104,6 +104,9 @@ grid-template-areas: 'umc umc'
 
 justify-content: center;
 padding-bottom: 200px;
+max-width: 1200px;
+border: 1px solid #eee;
+position: relative;
 }
 
 
@@ -134,9 +137,10 @@ height: 80px;
   display: grid;
   align-content: flex-start;
   justify-content: center;
-  min-height: 500px;
+  min-height: 80vh;
   padding-top: 14%;
   padding-left: 25px;
+  position: relative;
 }
 
 .umc-text {

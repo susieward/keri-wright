@@ -70,6 +70,9 @@ grid-template-areas: 'hero hero'
                       'projects projects';
 padding-bottom: 100px;
 max-width: 1200px;
+position: relative;
+
+
 
 }
 
@@ -81,6 +84,8 @@ max-width: 1200px;
   justify-content: center;
 
   min-height: 80vh;
+
+  position: relative;
 
 
 
@@ -104,17 +109,20 @@ max-width: 1200px;
 display: grid;
 grid-template-columns: auto auto;
   justify-content: center;
+  align-content: flex-start;
+margin-top: 20px;
+
 }
 
 .line-item1 {
-height: 80px;
+height: 100px;
   border-right: 2px solid #fff;
-  margin: auto;
+
   width: 50px;
 }
 
 .line-item2 {
-  height: 50px;
+  height: 80px;
 
     width: 50px;
 }
@@ -129,7 +137,7 @@ height: 80px;
   grid-template-rows: 1fr 1fr;
 
   min-height: 400px;
-
+  position: relative;
 
 
 }
