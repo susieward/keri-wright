@@ -1,0 +1,23 @@
+@font-face {
+font-family: "Montserrat Regular";
+  src: url('./fonts/Montserrat-Regular.woff');
+}
+
+@font-face {
+font-family: "Montserrat Black";
+  src: url('./fonts/Montserrat-Black.woff');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Montserrat Regular';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+margin: 0;
+padding: 0;
+}
