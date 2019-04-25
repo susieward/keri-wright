@@ -69,7 +69,7 @@ grid-template-areas: 'hero hero'
                       'line line'
                       'projects projects';
 padding-bottom: 100px;
-justify-content: center;
+
 }
 
 
@@ -82,6 +82,8 @@ justify-content: center;
 
 
 
+
+
 }
 
 .hero-text {
@@ -90,7 +92,6 @@ justify-content: center;
   font-size: 40px;
   line-height: normal;
   text-transform: uppercase;
-  margin: auto;
   padding-right: 200px;
   padding-left: 50px;
 
@@ -125,8 +126,9 @@ height: 80px;
   grid-area: projects;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  max-width: 1000px;
+
   min-height: 400px;
+
 
 }
 
@@ -141,6 +143,7 @@ height: 80px;
   margin: auto;
   color: #959595;
     max-width: 700px;
+    min-width: auto;
     font-size: 18px;
     line-height: 24px;
     font-family: 'Overpass Mono Bold';

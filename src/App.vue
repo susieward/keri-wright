@@ -243,7 +243,7 @@ align-content: center;
 }
 
 .header-text {
-font-family: 'Montserrat';
+font-family: 'Montserrat Semi-Bold';
 font-size: 16px;
 text-transform: uppercase;
 }
@@ -338,6 +338,7 @@ font-family: 'Overpass Mono Bold';
   grid-template-rows: 1fr auto;
   color: #000;
   font-family: 'Montserrat Regular';
+  width: 100vw;
 }
 
 .footer-dark {
