@@ -8,7 +8,7 @@
 
           <div class="project">
             <div class="img-container" id="redtoken">
-              <img class="proj-img" src="./images/transptam.png" />
+              <router-link to="/redtoken"><img class="proj-img" src="./images/transptam.png" /></router-link>
             </div>
 
             <div class="proj-title">
@@ -23,15 +23,17 @@
 
           <div class="project">
             <div class="img-container">
-              <img class="proj-img" src="./images/umcom.jpg" />
+              <router-link to="/umcom"><img class="proj-img" src="./images/umcom.jpg" /></router-link>
             </div>
 
             <div class="proj-title">
-              United Methodist Communications
+              United Methodist<br />Communications
             </div>
 
             <div class="proj-desc">
-
+              A few of my projects while working at UMCOM.<br />
+              We are currently building a new site and these projects are all in development.
+              Links will be provided once the site is live.
             </div>
 
           </div>
@@ -55,7 +57,7 @@ padding: 0;
 display: grid;
 grid-template-areas: 'hero'
                       'projects';
-grid-gap: 50px;
+padding-bottom: 100px;
 }
 
 
@@ -68,6 +70,8 @@ grid-gap: 50px;
   min-height: 500px;
 max-width: 1000px;
   margin: auto;
+    margin-bottom: 50px;
+
 
 }
 
@@ -90,6 +94,7 @@ max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
   grid-gap: 150px;
+padding-bottom: 100px;
 }
 
 .project {
@@ -100,11 +105,8 @@ max-width: 1000px;
 
 .img-container {
 display: grid;
-align-content: flex-end;
-padding-bottom: 0;
-padding-top: 10px;
-margin-bottom: 10px;
 max-height: 500px;
+overflow: hidden;
 }
 
 #redtoken {
@@ -113,6 +115,7 @@ max-height: 500px;
 
 .proj-img {
 width: 100%;
+height: auto;
 object-fit: cover;
 
 }
@@ -130,7 +133,7 @@ object-fit: cover;
 .proj-desc {
   font-family: 'Montserrat Regular';
   color: #fff;
-  max-width: 600px;
+
   font-size: 18px;
   line-height: 22px;
   line-height: normal;

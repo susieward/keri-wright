@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="header">
+    <div class="header" :class="{ 'white-bg' : showWhite} ">
       <span class="header-text">Hi I'm Keri, nice to meet you</span>
       <div class="links">
         <span><router-link to="/about">about</router-link></span>
@@ -14,6 +14,25 @@
 
   </div>
 </template>
+<script>
+export default {
+data() {
+  return {
+
+  }
+},
+
+computed: {
+  showWhite(){
+    return this.$route.name !== 'Home' && this.$route.name !== 'UMCom'
+  }
+
+
+},
+  name: 'App',
+}
+
+</script>
 
 <style>
 
@@ -25,8 +44,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smoothing: antialiased;
-  background-color: #000;
   color: #fff;
+  background-color: #000;
   align-content: flex-start;
 }
 
@@ -35,8 +54,17 @@ display: grid;
 width: 100vw;
 grid-template-columns: auto auto;
 padding: 30px 35px 30px 35px;
-
+background-color: #000;
 align-content: center;
+}
+
+.white-bg {
+  background-color: #fff;
+  color: #000;
+}
+
+.white-bg .links a  {
+  color: #000;
 }
 
 .header-text {
@@ -48,7 +76,7 @@ text-transform: uppercase;
 .links {
   display: grid;
   grid-template-columns: auto auto;
-  grid-gap: 30px;
+  grid-gap: 40px;
   justify-content: flex-end;
   padding-right: 50px;
 }
@@ -57,12 +85,10 @@ text-transform: uppercase;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .main {
-  margin-right: 30px;
-  margin-left: 30px;
-margin-bottom: 100px;
+
 }
 </style>

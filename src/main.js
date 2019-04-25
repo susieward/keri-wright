@@ -5,6 +5,12 @@ import VueRouter from 'vue-router'
 import App from './App.vue'
 import Home from './components/Home.vue'
 import About from './components/About.vue'
+import UMCom from './components/UMCom.vue'
+import RedToken from './components/RedToken.vue'
+import FindAChurch from './components/FindAChurch.vue'
+import Source from './components/Source.vue'
+import WhatWeDo from './components/WhatWeDo.vue'
+import Sitecore from './components/Sitecore.vue'
 import './registerServiceWorker'
 
 Vue.use(VueRouter);
@@ -19,7 +25,44 @@ const routes = [
       path: '/about',
       name: 'About',
       component: About
+    },
+
+    {
+      path: '/redtoken',
+      name: 'RedToken',
+      component: RedToken
+    },
+
+    {
+      path: '/umcom',
+      name: 'UMCom',
+      component: UMCom
+    },
+
+    {
+      path: '/find-a-church',
+      name: 'FindAChurch',
+      component: FindAChurch
+    },
+
+    {
+      path: '/source',
+      name: 'Source',
+      component: Source
+    },
+
+    {
+      path: '/what-we-do',
+      name: 'WhatWeDo',
+      component: WhatWeDo
+    },
+
+    {
+      path: '/sitecore',
+      name: 'Sitecore',
+      component: Sitecore
     }
+
 ];
 
 const router = new VueRouter({

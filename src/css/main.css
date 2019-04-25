@@ -21,3 +21,79 @@ body {
 margin: 0;
 padding: 0;
 }
+
+.page {
+  display: grid;
+  width: 100vw;
+  align-content: flex-start;
+  background-color:#fff;
+
+}
+
+.page-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+
+}
+
+
+.page-title {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-gap: 30px;
+background-color: #fff;
+min-height: 100px;
+padding: 70px 80px 70px 60px;
+
+width: 1200px;
+margin-right: auto;
+margin-left: auto;
+
+}
+
+.page-main {
+  background-color: #EDEDED;
+  min-height: 700px;
+padding: 30px 30px 100px 30px;
+}
+
+.page-main-container {
+  display: grid;
+padding: 30px;
+justify-content: center;
+max-width: 1200px;
+margin-right: auto;
+margin-left: auto;
+
+}
+
+.page-img {
+max-width: 100%;
+margin: auto;
+}
+
+#source-img {
+  border: 25px solid #fff;
+}
+
+#what-img {
+  max-width: 80%;
+}
+
+
+.page-title-text {
+  font-family: 'Montserrat Black';
+  color: #000;
+  text-transform: uppercase;
+  font-size: 32px;
+  line-height: normal;
+
+}
+
+.page-text {
+  font-family: 'Montserrat Regular';
+  font-size: 18px;
+  line-height: 26px;
+  color: #000;
+}
