@@ -9,9 +9,17 @@
         </span>
       </div>
 
-      <div class="red-token-main">
-        <div class="main-container">
+      <div class="page-main">
+        <div class="page-main-container">
+            <div class="red-images-container">
+                <img class="red-img" src="./images/red1.png" />
 
+                <img class="red-img" src="./images/red2.png" />
+
+                <img class="red-img" src="./images/red3.png" />
+
+                <img class="red-img" src="./images/red4.png" />
+            </div>
         </div>
       </div>
     </div>
@@ -64,6 +72,19 @@ max-width: 1200px;
 margin-right: auto;
 margin-left: auto;
 
+}
+
+
+.red-images-container {
+display: grid;
+grid-auto-rows: auto;
+grid-template-columns: 1fr;
+grid-gap: 50px;
+}
+
+.red-img {
+  max-width: 75%;
+  margin: auto;
 }
 
 

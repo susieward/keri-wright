@@ -43,9 +43,9 @@ padding: 0;
   grid-template-rows: auto auto;
   grid-gap: 30px;
 background-color: #fff;
-min-height: 100px;
+height: 286px;
 padding: 70px 80px 70px 60px;
-
+align-content: flex-start;
 width: 1200px;
 margin-right: auto;
 margin-left: auto;
