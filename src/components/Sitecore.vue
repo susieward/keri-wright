@@ -39,6 +39,7 @@ export default {
   display: grid;
   grid-auto-rows: auto;
   grid-template-columns: 1fr;
+  grid-gap: 70px;
 }
 
 .sitecore-img {
