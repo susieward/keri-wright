@@ -185,6 +185,12 @@ methods: {
 
 }
 
+
+.contact-left p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 .contact a {
   color: #D86969;
   text-decoration: none;
@@ -374,11 +380,17 @@ font-family: 'Overpass Mono Bold';
 
 .footer-left {
   display: grid;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto;
   align-content: flex-start;
   justify-content: flex-start;
   padding: 30px 50px;
 
+}
+
+.footer-left p {
+
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .footer-right {
@@ -469,12 +481,26 @@ padding: 0px 50px 30px 50px;
     .footer-top {
 
       grid-template-rows: auto auto;
+      grid-gap: 0;
+      align-content: flex-start;
       grid-template-columns: 1fr;
     }
 
 
+    .footer-right {
+        padding: 20px 50px 0px 50px;
+
+    }
+
+
+    .footer-left {
+      padding: 20px 50px 0px 50px;
+
+    }
+
+
     .contact {
-        grid-template-rows: auto auto;
+      grid-template-rows: auto auto;
       grid-template-columns: 1fr;
       align-content: flex-start;
     }
