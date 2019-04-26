@@ -151,6 +151,7 @@ methods: {
   height: auto;
   color: #000;
   font-family: 'Montserrat Regular';
+  position: relative;
 }
 
 .contact-dark {
@@ -162,6 +163,8 @@ methods: {
   width: 50px;
   font-size: 30px;
   color: #444;
+  position: absolute;
+  right: 2px;
 }
 
 .contact-close-dark {
@@ -175,7 +178,7 @@ methods: {
 
 .contact-left {
   display: grid;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto;
   align-content: flex-start;
   padding: 30px 50px;
   justify-content: flex-start;
@@ -471,8 +474,22 @@ padding: 0px 50px 30px 50px;
 
 
     .contact {
-        grid-template-rows: auto 1fr auto;
+        grid-template-rows: auto auto;
       grid-template-columns: 1fr;
+      align-content: flex-start;
+    }
+
+    .contact-right {
+      display: grid;
+      justify-content: flex-end;
+      padding: 0 40px 20px 40px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .contact-left {
+padding: 20px 40px;
+
     }
 
 

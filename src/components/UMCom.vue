@@ -25,7 +25,7 @@
             </div>
 
             <div class="work-title">
-              Find A Church
+              <router-link to="/find-a-church">Find A Church</router-link>
             </div>
 
             <div class="work-desc">
@@ -40,7 +40,7 @@
             </div>
 
             <div class="work-title">
-              Sitecore Training
+                <router-link to="/sitecore">Sitecore Training</router-link>
             </div>
 
             <div class="work-desc">
@@ -55,7 +55,7 @@
             </div>
 
             <div class="work-title">
-              The Source
+              <router-link to="/source">The Source</router-link>
             </div>
 
             <div class="work-desc">
@@ -70,7 +70,7 @@
             </div>
 
             <div class="work-title">
-              What We Do
+              <router-link to="/what-we-do">What We Do</router-link>
             </div>
 
             <div class="work-desc">
@@ -202,6 +202,12 @@ object-fit: cover;
   padding: 0;
   margin: 0;
   text-transform: uppercase;
+}
+
+
+.work-title a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .work-desc {
