@@ -333,6 +333,10 @@ display: none;
     border-bottom: 3px solid #fff;
   }
 
+  .proj-title1:hover:after {
+    width: 90%;
+  }
+
   .proj-title2 {
     font-size: 16px;
   }
@@ -343,6 +347,16 @@ display: none;
     margin: 0;
     margin-left: auto;
     width: 50%;
+    padding-top: 10px;
+    border-bottom: 3px solid #fff;
+  }
+
+  .proj-title2:hover:after {
+    content: "";
+    display: block;
+    margin: 0;
+    margin-left: auto;
+    width: 90%;
     padding-top: 10px;
     border-bottom: 3px solid #fff;
   }
@@ -408,6 +422,8 @@ display: none;
       border-bottom: 3px solid #fff;
     }
 
+
+
     .proj-title2 {
       font-size: 16px;
     }
@@ -423,12 +439,18 @@ display: none;
       border-bottom: 3px solid #fff;
     }
 
+
+
+
       .proj-bottom {
         padding-left: 30px;
         padding-right: 30px;
 
       }
 
+      .proj-title1:hover:after {
+        width: 60%;
+      }
 
 
 }
