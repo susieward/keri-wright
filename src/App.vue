@@ -1,7 +1,7 @@
 <template>
   <div id="app" :class="{ 'app-hide' : hideSides}">
 
-      <div v-show="isContactOpen === true" ref="contactBar" class="contact" :class="{ 'contact-dark' : hideSides}">
+      <div v-if="isContactOpen === true" ref="contactBar" class="contact" :class="{ 'contact-dark' : hideSides}">
         <div class="contact-left">
           <p>
             EMAIL: <span><a href="mailto:keriannwright@gmail.com">keriannwright@gmail.com</a></span>
@@ -126,15 +126,13 @@ methods: {
 
   showContact() {
     this.isContactOpen = true;
-    this.$nextTick(function(){
-      this.$refs.contactBar.style.height = "200px";
-    })
+
   },
 
   closeContact() {
     this.isContactOpen = false;
-    this.$refs.contactBar.style.height = "0px";
-  },
+
+  }
 
 },
 
@@ -150,7 +148,7 @@ methods: {
   background-color: #FFFCF2;
   display: grid;
   grid-template-columns: auto 1fr auto;
-  height: 0px;
+  height: auto;
   color: #000;
   font-family: 'Montserrat Regular';
 }
@@ -276,7 +274,6 @@ text-transform: uppercase;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 16px;
   font-family: 'Montserrat Regular';
 }
 
@@ -432,6 +429,11 @@ padding: 0px 50px 30px 50px;
   display: none;
 }
 
+.links {
+    grid-gap: 20px;
+
+}
+
 }
 
 @media screen and (max-width: 600px){
@@ -443,7 +445,16 @@ padding: 0px 50px 30px 50px;
   }
 
   .links {
-      grid-gap: 20px;
+      grid-template-rows: auto auto auto;
+      grid-template-columns: 1fr;
+      text-align:right;
+      grid-gap: 10px;
+
+  }
+
+
+  .header-text {
+
   }
 
     .footer {
@@ -455,6 +466,12 @@ padding: 0px 50px 30px 50px;
     .footer-top {
 
       grid-template-rows: auto auto;
+      grid-template-columns: 1fr;
+    }
+
+
+    .contact {
+        grid-template-rows: auto 1fr auto;
       grid-template-columns: 1fr;
     }
 

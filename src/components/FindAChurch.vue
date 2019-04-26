@@ -202,4 +202,26 @@ grid-gap: 20px;
 
 }
 
+
+@media screen and (max-width: 600px){
+
+  .find-title {
+
+        font-size: 28px;
+
+  }
+
+
+  .find-mobile {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr;
+    justify-content: center;
+      width: 75%;
+      margin: auto;
+      grid-gap: 50px;
+  }
+
+}
+
 </style>

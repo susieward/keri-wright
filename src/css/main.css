@@ -119,3 +119,27 @@ margin: auto;
   line-height: 26px;
   color: #000;
 }
+
+
+@media screen and (max-width: 1200px){
+
+.page-title {
+  width: auto;
+  height: auto;
+}
+
+}
+
+
+@media screen and (max-width: 600px){
+
+.page-title {
+  width: auto;
+  height: auto;
+  padding: 50px 50px 50px 40px;
+}
+
+
+
+
+}
