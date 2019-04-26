@@ -474,6 +474,7 @@ padding: 0px 50px 30px 50px;
 
     .footer {
         grid-template-rows: auto 1fr;
+        min-height: auto;
 
     }
 
@@ -494,7 +495,7 @@ padding: 0px 50px 30px 50px;
 
 
     .footer-left {
-      padding: 20px 50px 0px 50px;
+      padding: 30px 50px 0px 50px;
 
     }
 
