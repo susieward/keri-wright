@@ -283,8 +283,8 @@ display: none;
 
 
   .projects {
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
     min-width: auto;
     grid-gap: 50px;
   }
@@ -297,11 +297,31 @@ display: none;
   }
 
   .proj-title1 {
-    font-size: 20px;
+    font-size: 18px;
+  }
+
+
+  .proj-title1:after {
+    content: "";
+    display: block;
+
+    width: 20%;
+    padding-top: 10px;
+    border-bottom: 3px solid #fff;
   }
 
   .proj-title2 {
-    font-size: 20px;
+    font-size: 18px;
+  }
+
+  .proj-title2:after {
+    content: "";
+    display: block;
+    margin: 0;
+    margin-left: auto;
+    width: 50%;
+    padding-top: 10px;
+    border-bottom: 3px solid #fff;
   }
 
 }
