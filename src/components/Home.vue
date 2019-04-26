@@ -339,6 +339,7 @@ display: none;
 
   .proj-title2 {
     font-size: 16px;
+
   }
 
   .proj-title2:after {
@@ -417,7 +418,7 @@ display: none;
       content: "";
       display: block;
 
-      width: 20%;
+      width: 50%;
       padding-top: 10px;
       border-bottom: 3px solid #fff;
     }
@@ -434,7 +435,7 @@ display: none;
       display: block;
       margin: 0;
       margin-left: auto;
-      width: 50%;
+      width: 90%;
       padding-top: 10px;
       border-bottom: 3px solid #fff;
     }
