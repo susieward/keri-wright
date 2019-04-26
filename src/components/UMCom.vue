@@ -137,7 +137,7 @@ height: 80px;
   align-content: flex-start;
   justify-content: center;
   min-height: 80vh;
-  padding-top: 14%;
+  padding-top: 15%;
   padding-left: 25px;
   position: relative;
 }
@@ -148,7 +148,7 @@ height: 80px;
   font-size: 40px;
   line-height: 55px;
   text-transform: uppercase;
-  padding-right: 250px;
+  padding-right: 400px;
   padding-left: 30px;
 }
 
