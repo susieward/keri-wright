@@ -31,7 +31,7 @@ cool project you need designed please get in touch!
       <span class="header-text">pleased to meet you</span>
       <div class="links">
         <span v-show="workPages"><router-link to="/umcom">work projects</router-link></span>
-        <span @click="showContact">contact</span>
+        <span><router-link to="to" @click.native="showContact">contact</router-link></span>
         <span><router-link to="/">home</router-link></span>
       </div>
     </div>
@@ -250,8 +250,29 @@ position: relative;
   color: #000;
 }
 
-.white-bg .links a  {
+
+.white-bg .links a {
+  display: block;
   color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Montserrat Regular';
+}
+
+
+.white-bg .links a:after {
+  display:block;
+  content: '';
+  padding-top: 5px;
+  border-bottom: solid 2px #000;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+
+.white-bg .links a:hover:after {
+  cursor: pointer;
+  transform: scaleX(1);
 }
 
 .header-text {
@@ -280,11 +301,57 @@ text-transform: uppercase;
 
 
 .links a {
+  display: block;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'Montserrat Regular';
 }
+
+
+.links a:after {
+  display:block;
+  content: '';
+  padding-top: 5px;
+  border-bottom: solid 2px #fff;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+
+.links a:hover:after {
+  cursor: pointer;
+  transform: scaleX(1);
+}
+
+
+.links span a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Montserrat Regular';
+}
+
+
+.links span a:after {
+  display:block;
+  content: '';
+  padding-top: 5px;
+  border-bottom: solid 2px #fff;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+
+.links span a:hover:after {
+  cursor: pointer;
+  transform: scaleX(1);
+}
+
+
+
+
 
 .main {
 grid-area: main;
