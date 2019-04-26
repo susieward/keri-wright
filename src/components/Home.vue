@@ -256,9 +256,38 @@ padding-right: 20px;
   }
 
   .hero-text {
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 28px;
+    line-height: 38px;
     padding-right: 100px;
+  }
+
+
+  .line-item1 {
+  height: 80px;
+    border-right: 2px solid #fff;
+
+    width: 10px;
+  }
+
+  .line-item2 {
+    height: 120px;
+
+      width:10px;
+  }
+
+
+  .projects {
+    padding-right: 0px;
+    padding-left: 0px;
+    min-width: auto;
+    grid-gap: 40px;
+  }
+
+
+  .proj-top p {
+    max-width: 300px;
+    font-size: 16px;
+    line-height: 26px;
   }
 
   .proj-title1 {
@@ -280,8 +309,8 @@ padding-right: 20px;
   }
 
   .hero-text {
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 26px;
+    line-height: 36px;
     padding-right: 100px;
   }
 

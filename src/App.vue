@@ -356,6 +356,8 @@ font-family: 'Overpass Mono Bold';
   grid-template-rows: 1fr auto;
   color: #000;
   font-family: 'Montserrat Regular';
+  font-size: 16px;
+  line-height: 24px;
   width: 100vw;
   bottom: 0;
 }
@@ -382,9 +384,9 @@ font-family: 'Overpass Mono Bold';
 .footer-right {
   display: grid;
   padding: 30px 50px;
-    font-size: 16px;
+
     justify-content: flex-end;
-    line-height: 22px;
+
 }
 
 .footer a {
@@ -446,7 +448,9 @@ padding: 0px 50px 30px 50px;
 
     .footer {
         grid-template-rows: auto 1fr;
+
     }
+
 
     .footer-top {
 
