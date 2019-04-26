@@ -24,26 +24,35 @@
       </div>
     </div>
 
+    <back-to-top bottom="30px" right="40px">
+        <svg  class="icon icon-chevron-top" viewBox="0 0 32 32" aria-hidden="true"><path d="M15.997 13.374l-7.081 7.081L7 18.54l8.997-8.998 9.003 9-1.916 1.916z"/></svg>
+    </back-to-top>
+
   </div>
 
 </template>
 <script>
+import BackToTop from 'vue-backtotop'
 export default {
   name: 'RedToken',
 
-
-  methods: {
-
-    scrollClick: function(){
-
-        this.$refs.test.scrollTop = 0;
+    components: {
+      BackToTop
     }
-
-  }
 }
 
 </script>
 <style>
+
+
+.btn-to-top {
+  width: 60px;
+  height: 60px;
+  padding: 10px 16px;
+  border-radius: 50%;
+  font-size: 22px;
+  line-height: 22px;
+}
 
 .red-token {
 display: grid;

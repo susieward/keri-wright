@@ -56,7 +56,6 @@ padding: 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-
 }
 
 
@@ -87,7 +86,6 @@ justify-content: center;
 max-width: 1200px;
 margin-right: auto;
 margin-left: auto;
-
 }
 
 .page-img {
