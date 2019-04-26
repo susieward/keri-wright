@@ -29,10 +29,13 @@ cool project you need designed please get in touch!
 
     <div class="header" ref="header" :class="{ 'white-bg' : showWhite} ">
       <span class="header-text">pleased to meet you</span>
-      <div class="links">
-        <span v-show="workPages"><router-link to="/umcom">work projects</router-link></span>
+
+
+      <div class="links" :class="{ 'stacked-links' : workPages}">
+
         <span><router-link to="" @click.native="showContact">contact</router-link></span>
         <span><router-link to="/">home</router-link></span>
+        <span id="work" v-show="workPages"><router-link to="/umcom">work projects</router-link></span>
       </div>
 
     </div>
@@ -652,6 +655,18 @@ padding: 0px 50px 30px 50px;
 }
 
 @media screen and (max-width: 600px){
+
+
+
+  .stacked-links {
+    grid-template-rows: auto auto auto;
+justify-content: flex-end;
+text-align: right;
+  grid-template-columns: 1fr;
+
+  }
+
+
 
   .links a {
     display: block;
