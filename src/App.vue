@@ -31,9 +31,10 @@ cool project you need designed please get in touch!
       <span class="header-text">pleased to meet you</span>
       <div class="links">
         <span v-show="workPages"><router-link to="/umcom">work projects</router-link></span>
-        <span><router-link to="to" @click.native="showContact">contact</router-link></span>
+        <span><router-link to="" @click.native="showContact">contact</router-link></span>
         <span><router-link to="/">home</router-link></span>
       </div>
+
     </div>
 
     <div class="left" v-show="sidesVisible">
@@ -90,12 +91,18 @@ cool project you need designed please get in touch!
 export default {
 data() {
   return {
-    isContactOpen: false
+    isContactOpen: false,
+    menuClicked: false
   }
 
 },
 
 computed: {
+
+  menuOpen(){
+    return this.menuClicked = true;
+  },
+
 
   workPages(){
 
@@ -124,6 +131,11 @@ computed: {
 
 methods: {
 
+
+  showMenu(){
+     this.menuClicked = true;
+   },
+
   showContact() {
     this.isContactOpen = true;
 
@@ -142,6 +154,119 @@ methods: {
 </script>
 
 <style>
+
+.menu {
+  display: none;
+}
+
+.menu span {
+  width: 35px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+}
+
+.nav {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  color: #000;
+  opacity: 0.5;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  padding: 30px;
+  z-index: 3;
+}
+
+
+input + label {
+   position: fixed;
+   top: 40px;
+   right: 40px;
+   height: 20px;
+   width: 15px;
+   z-index: 5;
+   span {
+     position: absolute;
+     width: 100%;
+     height: 2px;
+     top: 50%;
+     margin-top: -1px;
+     left: 0;
+     display: block;
+     background: #fff;;
+     transition: .5s;
+   }
+   span:first-child {
+     top: 3px;
+   }
+   span:last-child {
+     top: 16px;
+   }
+ }
+ label:hover {
+   cursor: pointer;
+ }
+ input:checked + label {
+   span {
+     opacity: 0;
+     top: 50%;
+   }
+   span:first-child {
+     opacity: 1;
+     transform: rotate(405deg);
+   }
+   span:last-child {
+     opacity: 1;
+     transform: rotate(-405deg);
+   }
+ }
+
+
+ input ~ nav {
+     background: white;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100px;
+     z-index: 3;
+     transition: .5s;
+     transition-delay: .5s;
+     overflow: hidden;
+     > ul {
+       text-align: center;
+       position: absolute;
+       top: 35%;
+       left: 20%;
+       right: 20%;
+       > li {
+         opacity: 0;
+         transition: .5s;
+         transition-delay: 0s;
+         > a {
+           text-decoration: none;
+           text-transform: uppercase;
+           color: $blackColor;
+           font-weight: 700;
+           font-family: sans-serif;
+           display: block;
+           padding: 30px;
+         }
+       }
+     }
+   }
+   input:checked ~ nav {
+     height: 100%;
+     transition-delay: 0s;
+     > ul {
+       > li {
+         opacity: 1;
+         transition-delay: .5s;
+       }
+     }
+   }
 
 .contact {
   grid-area: contact;
@@ -215,6 +340,8 @@ methods: {
   font-smoothing: antialiased;
   color: #fff;
   background-color: #000;
+  z-index: 0;
+  opacity: 1;
 
 
   grid-template-areas:
@@ -234,6 +361,10 @@ methods: {
                       'footer footer footer';
 }
 
+.fullscreen {
+opacity: 0;
+}
+
 .header {
 grid-area: header;
 display: grid;
@@ -243,6 +374,7 @@ padding: 40px 80px 30px 95px;
 background-color: #000;
 align-content: center;
 position: relative;
+z-index: 0;
 }
 
 .white-bg {
@@ -358,13 +490,14 @@ grid-area: main;
 display: grid;
 
 position: relative;
+  z-index: 0;
 }
 
 .content {
 
   display: grid;
 justify-content: center;
-
+  z-index: 0;
 }
 
 .hide {
@@ -520,18 +653,70 @@ padding: 0px 50px 30px 50px;
 
 @media screen and (max-width: 600px){
 
+  .links a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat Regular';
+  }
+
+  .links a:after {
+    display:block;
+    border: none;
+  }
+
+
+  .links a:hover:after {
+    cursor: pointer;
+
+  }
+
+  .links span a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat Regular';
+  }
+
+
+  .links span a:after {
+    display:block;
+    border: none;
+  }
+
+
+  .links span a:hover:after {
+    cursor: pointer;
+
+  }
+
+
+  .white-bg .links a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat Regular';
+  }
+
+
+  .white-bg .links a:after {
+    display:block;
+    border: none;
+
+  }
+
+
+  .white-bg .links a:hover:after {
+    cursor: pointer;
+
+  }
 
   .header {
     padding: 40px 30px 30px 35px;
     grid-gap: 10px;
-  }
-
-  .links {
-      grid-template-rows: auto auto auto;
-      grid-template-columns: 1fr;
-      text-align:right;
-      grid-gap: 10px;
-
   }
 
 
