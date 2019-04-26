@@ -12,7 +12,7 @@
       </div>
 
       <div class="page-main">
-        <div class="page-main-container">
+        <div class="page-main-container" id="church-main-container">
 
           <div class="find-a-church-container">
 
@@ -93,9 +93,11 @@
         </div>
       </div>
     </div>
-    <back-to-top bottom="30px" right="40px">
-        <svg  class="icon icon-chevron-top" viewBox="0 0 32 32" aria-hidden="true"><path d="M15.997 13.374l-7.081 7.081L7 18.54l8.997-8.998 9.003 9-1.916 1.916z"/></svg>
-    </back-to-top>
+    <back-to-top bottom="20px" right="20px">
+      <div class="icon-container">
+        <svg class="icon icon-chevron-top" viewBox="0 0 32 32" aria-hidden="true"><path d="M15.997 13.374l-7.081 7.081L7 18.54l8.997-8.998 9.003 9-1.916 1.916z"/></svg>
+        </div>
+</back-to-top>
   </div>
 
 </template>
@@ -113,13 +115,46 @@ export default {
 <style>
 
 
+.back {
+  bottom: 50px;
+  right: 50px;
+}
+
+
+.icon {
+  display:inline-block;
+  fill: #707070;
+  margin-top: -0.2em;
+  width: 6em;
+  height: 4.5em;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+
+.icon-container {
+}
+
 .btn-to-top {
-  width: 60px;
-  height: 60px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
   padding: 10px 16px;
-  border-radius: 50%;
-  font-size: 22px;
-  line-height: 22px;
+  border: 1px solid blue;
+}
+
+#church-main-container {
+    display: grid;
+  padding: 30px;
+  justify-content: center;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.top-container {
+
 }
 
 .find-a-church-container {
@@ -128,6 +163,8 @@ export default {
   grid-auto-rows: auto;
 grid-gap: 150px;
 max-width: 800px;
+position: relative;
+
 }
 
 .find-title {
@@ -220,7 +257,59 @@ grid-gap: 20px;
 }
 
 
+@media screen and (max-width: 1000px){
+
+
+  .icon-container {
+
+  }
+
+  #church-main-container {
+      display: grid;
+    padding-right: 40px;
+    justify-content: center;
+    grid-template-columns: 1fr auto;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+
+  .icon {
+    display:inline-block;
+    fill: #707070;
+    margin-top: -0.2em;
+    width: 3em;
+    height: 3.5em;
+    vertical-align: middle;
+    overflow: hidden;
+
+  }
+
+}
+
+
+@media screen and (max-width: 800px){
+
+
+
+
+}
+
+
 @media screen and (max-width: 600px){
+
+
+  .icon {
+    display:inline-block;
+    fill: #707070;
+    margin-top: -0.2em;
+    width: 2.5em;
+    height: 2.5em;
+    vertical-align: middle;
+    overflow: hidden;
+
+  }
 
   .find-title {
 
