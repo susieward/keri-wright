@@ -30,5 +30,14 @@ export default {
 </script>
 <style>
 
+@media screen and (max-width: 600px){
+
+  #source-img {
+    max-width: 100%;
+    margin: auto;
+      border: 5px solid #fff;
+  }
+
+}
 
 </style>

@@ -47,4 +47,13 @@ export default {
   margin: auto;
 }
 
+@media screen and (max-width: 600px){
+
+  .sitecore-img {
+    max-width: 100%;
+    margin: auto;
+  }
+
+}
+
 </style>

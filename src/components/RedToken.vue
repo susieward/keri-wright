@@ -117,4 +117,14 @@ border: 1px solid #222;
 }
 
 
+@media screen and (max-width: 600px){
+
+  .red-img {
+    max-width: 100%;
+    margin: auto;
+  }
+
+}
+
+
 </style>

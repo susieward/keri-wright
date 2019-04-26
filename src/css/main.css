@@ -139,5 +139,12 @@ margin: auto;
   padding: 50px 50px 50px 40px;
 }
 
+.page-main-container {
+  padding: 0px;
+}
+
+#what-img {
+  max-width: 100%;
+}
 
 }
