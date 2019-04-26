@@ -49,9 +49,25 @@
 
           </div>
 
+
+                    <div class="work-item">
+                      <div class="work-img-container">
+                        <router-link to="/what-we-do"><img class="work-img" src="./images/whatwedo.jpeg" /></router-link>
+                      </div>
+
+                      <div class="work-title">
+                        <router-link to="/what-we-do">What We Do</router-link>
+                      </div>
+
+                      <div class="work-desc">
+                      A Landing Page made for United Methodist Communications
+                      </div>
+
+                    </div>    
+
           <div class="work-item">
             <div class="work-img-container">
-              <router-link to="/source"><img class="work-img" src="./images/source.png" /></router-link>
+              <router-link to="/source"><img class="work-img" src="./images/sourcegrey.jpeg" /></router-link>
             </div>
 
             <div class="work-title">
@@ -64,20 +80,6 @@
 
           </div>
 
-          <div class="work-item">
-            <div class="work-img-container">
-              <router-link to="/what-we-do"><img class="work-img" src="./images/what.png" /></router-link>
-            </div>
-
-            <div class="work-title">
-              <router-link to="/what-we-do">What We Do</router-link>
-            </div>
-
-            <div class="work-desc">
-            A Landing Page made for United Methodist Communications
-            </div>
-
-          </div>
 
 
         </div>
