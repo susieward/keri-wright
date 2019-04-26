@@ -288,7 +288,7 @@ object-fit: cover;
 .umc {
   padding-top: 18%;
   padding-left: 30px;
-    min-height: 60vh;
+    min-height: 50vh;
 }
 
   .umc-text {
