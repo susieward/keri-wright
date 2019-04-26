@@ -231,8 +231,8 @@ padding-right: 20px;
   .projects {
     padding-right: 20px;
     padding-left: 20px;
-    grid-gap: 40px;
-    padding-top: 40px;
+    grid-gap: 50px;
+    padding-top: 20px;
   }
 
   .proj-top p {
@@ -283,10 +283,10 @@ display: none;
 
 
   .projects {
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
     min-width: auto;
-    grid-gap: 40px;
+    grid-gap: 50px;
   }
 
 
@@ -341,7 +341,7 @@ display: none;
     padding-right: 0px;
     padding-left: 0px;
     min-width: auto;
-    grid-gap: 40px;
+
   }
 
 
