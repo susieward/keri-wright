@@ -105,7 +105,6 @@ grid-template-areas: 'umc umc'
 justify-content: center;
 padding-bottom: 200px;
 max-width: 1200px;
-border: 1px solid #eee;
 position: relative;
 }
 
@@ -147,9 +146,8 @@ height: 80px;
   font-family: 'Montserrat Regular';
   color: #fff;
   font-size: 40px;
-  line-height: normal;
+  line-height: 55px;
   text-transform: uppercase;
-  margin: auto;
   padding-right: 250px;
   padding-left: 30px;
 }
@@ -211,8 +209,90 @@ object-fit: cover;
   color: #fff;
 
   font-size: 18px;
-  line-height: 22px;
-  line-height: normal;
+  line-height: 26px;
+
 }
+
+
+@media screen and (max-width: 800px){
+
+
+.umcom {
+  max-width: 700px;
+}
+
+.umc {
+  min-height: 70vh;
+}
+  .umc-text {
+    font-size: 35px;
+      line-height: 45px;
+      padding-right: 200px;
+      padding-left: 20px;
+  }
+
+
+  .work {
+    max-width: 550px;
+  }
+
+
+  .work-container {
+    grid-gap: 100px;
+  }
+
+
+  .work-title {
+    font-size: 28px;
+    line-height: normal;
+  }
+
+
+  .work-desc {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+
+}
+
+@media screen and (max-width: 600px){
+  .umcom {
+    max-width: 550px;
+
+  }
+
+
+.umc {
+  padding-top: 24%;
+  padding-left: 25px;
+}
+
+  .umc-text {
+    font-size: 24px;
+    line-height: 34px;
+    padding-right: 100px;
+  }
+
+
+  .work {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+
+    .work-title {
+      font-size: 26px;
+      line-height: normal;
+    }
+
+
+    .work-desc {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+}
+
 
 </style>

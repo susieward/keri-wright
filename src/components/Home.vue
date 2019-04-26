@@ -95,7 +95,8 @@ position: relative;
   font-family: 'Montserrat Regular';
   color: #fff;
   font-size: 40px;
-  line-height: normal;
+  line-height: 55px;
+
   text-transform: uppercase;
   padding-right: 200px;
   padding-left: 50px;
@@ -224,7 +225,8 @@ padding-right: 20px;
   min-height: 70vh;
 }
   .hero-text {
-    font-size: 30px;
+    font-size: 35px;
+    line-height: 45px;
   }
 
   .projects {
