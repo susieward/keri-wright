@@ -6,7 +6,7 @@
 
         <span class="page-title-text">find a church</span>
         <span class="page-text">
-          This is the redesigned mockup of a preexisting website at UMCOM. The goal was to make it more user-friendly and aesthetically appealing, while also fitting the current theme of our new site.
+          This is the redesigned mockup of a preexisting website at United Methodist Communications. The goal was to make it more user-friendly and aesthetically appealing, while also fitting the current theme of our upcoming site.
         </span>
 
       </div>

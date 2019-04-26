@@ -44,7 +44,7 @@
             </div>
 
             <div class="work-desc">
-              A Wordpress site in production created for training the employees at United Methodist Communications on our CMS Platform.
+              A Wordpress site in development created for training the employees at United Methodist Communications on our CMS Platform.
             </div>
 
           </div>
