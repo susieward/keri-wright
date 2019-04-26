@@ -84,7 +84,6 @@ position: relative;
   justify-content: center;
 
   min-height: 80vh;
-
   position: relative;
 
 
@@ -110,14 +109,12 @@ display: grid;
 grid-template-columns: auto auto;
   justify-content: center;
   align-content: flex-start;
-margin-top: 20px;
-
+margin-top: 10px;
 }
 
 .line-item1 {
 height: 100px;
   border-right: 2px solid #fff;
-
   width: 50px;
 }
 
@@ -138,6 +135,7 @@ height: 100px;
 
   min-height: 400px;
   position: relative;
+
 
 
 }
@@ -213,6 +211,148 @@ padding-right: 20px;
   width: 50%;
   padding-top: 15px;
   border-bottom: 4px solid #fff;
+}
+
+@media screen and (max-width: 800px){
+
+
+.home {
+  max-width: 700px;
+}
+
+.hero {
+  min-height: 70vh;
+}
+  .hero-text {
+    font-size: 30px;
+  }
+
+  .projects {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .proj-top p {
+    max-width: 500px;
+  }
+
+
+  .proj-title1 {
+    font-size: 22px;
+  }
+
+  .proj-title2 {
+    font-size: 22px;
+  }
+}
+
+
+@media screen and (max-width: 600px){
+  .home {
+    max-width: 550px;
+
+  }
+
+  .hero-text {
+    font-size: 24px;
+    line-height: 34px;
+    padding-right: 100px;
+  }
+
+  .proj-title1 {
+    font-size: 20px;
+  }
+
+  .proj-title2 {
+    font-size: 20px;
+  }
+
+}
+
+
+@media screen and (max-width: 400px){
+
+  .home {
+    max-width: 390px;
+
+  }
+
+  .hero-text {
+    font-size: 24px;
+    line-height: 34px;
+    padding-right: 100px;
+  }
+
+.line {
+
+}
+
+  .line-item1 {
+  height: 80px;
+    border-right: 2px solid #fff;
+
+    width: 10px;
+  }
+
+  .line-item2 {
+    height: 120px;
+
+      width:10px;
+  }
+
+
+
+  .projects {
+    padding-right: 0px;
+    padding-left: 0px;
+    min-width: auto;
+    grid-gap: 40px;
+  }
+
+
+  .proj-top p {
+    max-width: 300px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+
+    .proj-title1 {
+      font-size: 18px;
+    }
+
+    .proj-title1:after {
+      content: "";
+      display: block;
+
+      width: 20%;
+      padding-top: 10px;
+      border-bottom: 3px solid #fff;
+    }
+
+    .proj-title2 {
+      font-size: 18px;
+    }
+
+
+    .proj-title2:after {
+      content: "";
+      display: block;
+      margin: 0;
+      margin-left: auto;
+      width: 50%;
+      padding-top: 10px;
+      border-bottom: 3px solid #fff;
+    }
+
+      .proj-bottom {
+        padding-left: 30px;
+        padding-right: 30px;
+
+      }
+
+
+
 }
 
 

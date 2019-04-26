@@ -28,7 +28,7 @@ cool project you need designed please get in touch!
 
 
     <div class="header" ref="header" :class="{ 'white-bg' : showWhite} ">
-      <span class="header-text">lovely to meet you</span>
+      <span class="header-text">pleased to meet you</span>
       <div class="links">
         <span v-show="workPages"><router-link to="/umcom">work projects</router-link></span>
         <span @click="showContact">contact</span>
@@ -180,6 +180,7 @@ methods: {
   grid-template-rows: auto auto auto;
   align-content: flex-start;
   padding: 30px 50px;
+  justify-content: flex-start;
 
 }
 
@@ -190,6 +191,7 @@ methods: {
 
 .contact-right {
   display: grid;
+  justify-content: flex-end;
   padding: 30px 50px;
     font-size: 16px;
     line-height: 22px;
@@ -199,8 +201,7 @@ methods: {
 #app {
   display: grid;
   min-height: 100vh;
-  min-width: 100%;
-  position: relative;
+  min-width: 100vw;
   font-family: 'Montserrat Regular';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -222,7 +223,6 @@ methods: {
   grid-template-areas:
                         'contact contact contact'
                         'header header header'
-                      'main main main'
                       'main main main'
                       'footer footer footer';
 }
@@ -357,6 +357,7 @@ font-family: 'Overpass Mono Bold';
   color: #000;
   font-family: 'Montserrat Regular';
   width: 100vw;
+  bottom: 0;
 }
 
 .footer-dark {
@@ -366,13 +367,14 @@ font-family: 'Overpass Mono Bold';
 
 .footer-top {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto auto;
 }
 
 .footer-left {
   display: grid;
   grid-template-rows: auto auto auto;
   align-content: flex-start;
+  justify-content: flex-start;
   padding: 30px 50px;
 
 }
@@ -381,6 +383,7 @@ font-family: 'Overpass Mono Bold';
   display: grid;
   padding: 30px 50px;
     font-size: 16px;
+    justify-content: flex-end;
     line-height: 22px;
 }
 
@@ -393,6 +396,65 @@ font-family: 'Overpass Mono Bold';
   display: grid;
 justify-content: flex-end;
 padding: 0px 50px 30px 50px;
+}
+
+@media screen and (max-width: 1200px){
+
+  .header {
+    padding: 40px 50px 30px 65px;
+  }
+
+}
+
+
+@media screen and (max-width: 800px){
+
+#app {
+  grid-template-areas:
+                        'contact contact contact'
+                        'header header header'
+                      'main main main'
+                      'main main main'
+                      'footer footer footer';
+}
+
+.header {
+  padding: 40px 50px 30px 65px;
+}
+
+.left {
+  display: none;
+}
+
+.right {
+  display: none;
+}
+
+}
+
+@media screen and (max-width: 600px){
+
+
+  .header {
+    padding: 40px 30px 30px 35px;
+    grid-gap: 10px;
+  }
+
+  .links {
+      grid-gap: 20px;
+  }
+
+    .footer {
+        grid-template-rows: auto 1fr;
+    }
+
+    .footer-top {
+
+      grid-template-rows: auto auto;
+      grid-template-columns: 1fr;
+    }
+
+
 }
 
 </style>
