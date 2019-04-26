@@ -264,7 +264,7 @@ display: none;
   .hero-text {
     font-size: 28px;
     line-height: 38px;
-    padding-right: 100px;
+    padding-right: 50px;
   }
 
 
@@ -297,7 +297,7 @@ display: none;
   }
 
   .proj-title1 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
 
@@ -311,7 +311,7 @@ display: none;
   }
 
   .proj-title2 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .proj-title2:after {
@@ -337,7 +337,7 @@ display: none;
   .hero-text {
     font-size: 26px;
     line-height: 36px;
-    padding-right: 100px;
+    padding-right: 50px;
   }
 
 
@@ -373,7 +373,7 @@ display: none;
 
 
     .proj-title1 {
-      font-size: 18px;
+      font-size: 16px;
     }
 
     .proj-title1:after {
@@ -386,7 +386,7 @@ display: none;
     }
 
     .proj-title2 {
-      font-size: 18px;
+      font-size: 16px;
     }
 
 

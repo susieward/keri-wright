@@ -63,7 +63,7 @@
                       A Landing Page made for United Methodist Communications
                       </div>
 
-                    </div>    
+                    </div>
 
           <div class="work-item">
             <div class="work-img-container">
