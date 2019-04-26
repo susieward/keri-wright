@@ -138,7 +138,6 @@ height: 100px;
   position: relative;
 
 
-
 }
 
 .proj-top {
@@ -232,6 +231,8 @@ padding-right: 20px;
   .projects {
     padding-right: 20px;
     padding-left: 20px;
+    grid-gap: 40px;
+    padding-top: 40px;
   }
 
   .proj-top p {
@@ -245,6 +246,11 @@ padding-right: 20px;
 
   .proj-title2 {
     font-size: 22px;
+  }
+
+
+  .line {
+display: none;
   }
 }
 
@@ -314,9 +320,7 @@ padding-right: 20px;
     padding-right: 100px;
   }
 
-.line {
 
-}
 
   .line-item1 {
   height: 80px;
