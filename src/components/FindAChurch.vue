@@ -93,7 +93,7 @@
         </div>
       </div>
     </div>
-    <back-to-top bottom="20px" right="20px">
+    <back-to-top bottom="40px" right="40px">
       <div class="icon-container">
         <svg class="icon icon-chevron-top" viewBox="0 0 32 32" aria-hidden="true"><path d="M15.997 13.374l-7.081 7.081L7 18.54l8.997-8.998 9.003 9-1.916 1.916z"/></svg>
         </div>
@@ -124,15 +124,25 @@ export default {
 .icon {
   display:inline-block;
   fill: #707070;
-  margin-top: -0.2em;
-  width: 6em;
-  height: 4.5em;
+margin-top: 3px;
+
+  width: 68px;
+  height: 60px;
   vertical-align: middle;
   overflow: hidden;
+
+
 }
 
 
+
 .icon-container {
+  height: 70px;
+  width:70px;
+  background-color: #fff;
+  opacity: 0.6;
+  border: 1px solid #fff;
+  border-radius: 50%;
 }
 
 .btn-to-top {
@@ -260,10 +270,6 @@ grid-gap: 20px;
 @media screen and (max-width: 1000px){
 
 
-  .icon-container {
-
-  }
-
   #church-main-container {
       display: grid;
     padding-right: 40px;
@@ -275,23 +281,11 @@ grid-gap: 20px;
 
   }
 
-  .icon {
-    display:inline-block;
-    fill: #707070;
-    margin-top: -0.2em;
-    width: 3em;
-    height: 3.5em;
-    vertical-align: middle;
-    overflow: hidden;
-
-  }
 
 }
 
 
 @media screen and (max-width: 800px){
-
-
 
 
 }
@@ -300,12 +294,18 @@ grid-gap: 20px;
 @media screen and (max-width: 600px){
 
 
+  .icon-container {
+width: 50px;
+height: 50px;
+  }
+
+
   .icon {
     display:inline-block;
-    fill: #707070;
+    fill: #444;
     margin-top: -0.2em;
-    width: 2.5em;
-    height: 2.5em;
+    width: 48px;
+    height: 50px;
     vertical-align: middle;
     overflow: hidden;
 

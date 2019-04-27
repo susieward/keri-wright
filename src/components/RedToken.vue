@@ -25,7 +25,11 @@
     </div>
 
     <back-to-top bottom="30px" right="40px">
+      <div class="icon-container">
+
         <svg  class="icon icon-chevron-top" viewBox="0 0 32 32" aria-hidden="true"><path d="M15.997 13.374l-7.081 7.081L7 18.54l8.997-8.998 9.003 9-1.916 1.916z"/></svg>
+
+          </div>
     </back-to-top>
 
   </div>
@@ -115,15 +119,7 @@ margin-right: 3%;
 border: 1px solid #222;
 }
 
-.icon {
-  display:inline-block;
-  fill: #707070;
-  margin-top: -0.2em;
-  width: 6em;
-  height: 4.5em;
-  vertical-align: middle;
-  overflow: hidden;
-}
+
 
 
 @media screen and (max-width: 600px){

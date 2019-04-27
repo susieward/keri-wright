@@ -267,9 +267,7 @@ transform: translate3d(0, 0, 0) scale(1);
 backface-visibility: hidden;
 }
 
-.work-desc::before, .work-desc::after {
-  pointer-events: none;
-}
+
 
 .clearfix:before,
 .clearfix:after {
