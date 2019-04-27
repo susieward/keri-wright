@@ -153,15 +153,7 @@ margin-top: 3px;
   border: 1px solid blue;
 }
 
-#church-main-container {
-    display: grid;
-  padding: 30px;
-  justify-content: center;
-  max-width: 1200px;
-  margin-right: auto;
-  margin-left: auto;
 
-}
 
 .top-container {
 
@@ -272,7 +264,7 @@ grid-gap: 20px;
 
   #church-main-container {
       display: grid;
-    padding-right: 40px;
+
     justify-content: center;
     grid-template-columns: 1fr auto;
     max-width: 1200px;
@@ -323,7 +315,7 @@ height: 50px;
     grid-auto-rows: auto;
     grid-template-columns: 1fr;
     justify-content: center;
-      width: 75%;
+      width: 80%;
       margin: auto;
       grid-gap: 50px;
   }
