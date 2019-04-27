@@ -1,5 +1,23 @@
 <template>
-  <div id="app" :class="{ 'app-hide' : hideSides}">
+  <div id="app" :class="{ 'app-hide' : hideSides }">
+    <div class="nav-links" :class="navState">
+      <div class="nav-close">
+
+          <p @click="toggleMenu">
+            &#215;
+          </p>
+
+      </div>
+      <div class="nav-links-container">
+
+
+      <span><router-link to="" @click.native="showContact">contact</router-link></span>
+      <span><router-link to="" @click.native="routeHome">home</router-link></span>
+      <span id="work" v-show="workPages"><router-link to="" @click.native="routeProjects">work projects</router-link></span>
+
+      </div>
+    </div>
+
 
       <div v-if="isContactOpen === true" ref="contactBar" class="contact" :class="{ 'contact-dark' : hideSides}">
         <div class="contact-left">
@@ -27,15 +45,20 @@ cool project you need designed please get in touch!
       </div>
 
 
+
+
     <div class="header" ref="header" :class="{ 'white-bg' : showWhite} ">
       <span class="header-text">pleased to meet you</span>
-
-
       <div class="links" :class="{ 'stacked-links' : workPages}">
 
         <span><router-link to="" @click.native="showContact">contact</router-link></span>
         <span><router-link to="/">home</router-link></span>
         <span id="work" v-show="workPages"><router-link to="/umcom">work projects</router-link></span>
+      </div>
+
+      <div class="menu">
+        <div class="border-menu" @click="toggleMenu">
+        </div>
       </div>
 
     </div>
@@ -84,6 +107,9 @@ cool project you need designed please get in touch!
         </p>
       </div>
     </div>
+
+
+
   </div>
 
 
@@ -95,17 +121,22 @@ export default {
 data() {
   return {
     isContactOpen: false,
-    menuClicked: false
+    menuClicked: false,
+    isMenuOpen: false
   }
 
 },
 
 computed: {
 
-  menuOpen(){
-    return this.menuClicked = true;
-  },
+navState(){
+  return this.menuClicked ? 'nav-show' : 'nav-hide';
+},
 
+  appOpacity(){
+
+      return this.menuClicked ? 'app-fade' : 'app-show';
+  },
 
   workPages(){
 
@@ -135,12 +166,25 @@ computed: {
 methods: {
 
 
-  showMenu(){
-     this.menuClicked = true;
-   },
+  routeHome: function(){
+    this.menuClicked = false;
+    this.$router.push('/');
+  },
+
+  routeProjects: function(){
+    this.menuClicked = false;
+    this.$router.push('/umcom');
+  },
+
+
+  toggleMenu(){
+
+    this.menuClicked = !this.menuClicked;
+  },
 
   showContact() {
     this.isContactOpen = true;
+    this.menuClicked = false;
 
   },
 
@@ -158,15 +202,109 @@ methods: {
 
 <style>
 
+.nav-show {
+  display: grid;
+  justify-content: center;
+
+  z-index: 4;
+    width: 100vw;
+height: 100vh;
+    position: fixed;
+align-content: flex-start;
+padding-top: 50px;
+text-align: center;
+opacity: 1;
+  background-color: #FDAFA4;
+}
+
+
+
+
+.nav-links-container {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: auto auto auto;
+  grid-gap: 30px;
+  margin-top: 43px;
+  transition: 0.3s;
+}
+
+.nav-show span {
+
+
+}
+
+
+.nav-show a {
+  color: #fff;
+  font-size: 25px;
+
+font-family: 'Montserrat Regular';
+  opacity: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+.nav-show a:hover {
+  color: #000;
+}
+
+
+
+.nav-hide {
+
+z-index: -1;
+height: 0vh;
+
+transition: 0.5s;
+}
+
+
+
+.nav-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 30px;
+  padding-top: 0px;
+}
+
+
+.nav-close p {
+  cursor: pointer;
+  color: #fff;
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links {
+
+grid-area: nav;
+
+transition: 0.5s;
+}
+
+
 .menu {
   display: none;
 }
 
-.menu span {
-  width: 35px;
-  height: 3px;
-  background-color: #fff;
-  margin: 6px 0;
+.border-menu {
+  position: relative;
+
+}
+.border-menu:before {
+  content: "";
+  position: absolute;
+  top: 0.25em;
+  right: 0;
+  width: 40px;
+  height: 10px;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+    cursor: pointer;
 }
 
 .nav {
@@ -181,95 +319,6 @@ methods: {
   padding: 30px;
   z-index: 3;
 }
-
-
-input + label {
-   position: fixed;
-   top: 40px;
-   right: 40px;
-   height: 20px;
-   width: 15px;
-   z-index: 5;
-   span {
-     position: absolute;
-     width: 100%;
-     height: 2px;
-     top: 50%;
-     margin-top: -1px;
-     left: 0;
-     display: block;
-     background: #fff;;
-     transition: .5s;
-   }
-   span:first-child {
-     top: 3px;
-   }
-   span:last-child {
-     top: 16px;
-   }
- }
- label:hover {
-   cursor: pointer;
- }
- input:checked + label {
-   span {
-     opacity: 0;
-     top: 50%;
-   }
-   span:first-child {
-     opacity: 1;
-     transform: rotate(405deg);
-   }
-   span:last-child {
-     opacity: 1;
-     transform: rotate(-405deg);
-   }
- }
-
-
- input ~ nav {
-     background: white;
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100px;
-     z-index: 3;
-     transition: .5s;
-     transition-delay: .5s;
-     overflow: hidden;
-     > ul {
-       text-align: center;
-       position: absolute;
-       top: 35%;
-       left: 20%;
-       right: 20%;
-       > li {
-         opacity: 0;
-         transition: .5s;
-         transition-delay: 0s;
-         > a {
-           text-decoration: none;
-           text-transform: uppercase;
-           color: $blackColor;
-           font-weight: 700;
-           font-family: sans-serif;
-           display: block;
-           padding: 30px;
-         }
-       }
-     }
-   }
-   input:checked ~ nav {
-     height: 100%;
-     transition-delay: 0s;
-     > ul {
-       > li {
-         opacity: 1;
-         transition-delay: .5s;
-       }
-     }
-   }
 
 .contact {
   grid-area: contact;
@@ -343,11 +392,11 @@ input + label {
   font-smoothing: antialiased;
   color: #fff;
   background-color: #000;
-  z-index: 0;
-  opacity: 1;
-
-
+  z-index: 1;
+position: relative;
+overflow: hidden;
   grid-template-areas:
+
                         'contact contact contact'
                         'header header header'
                       'left main right'
@@ -364,6 +413,21 @@ input + label {
                       'footer footer footer';
 }
 
+
+
+.app-fade {
+  opacity: 0.2;
+
+}
+
+
+.app-show {
+  opacity: 1;
+  transition: 0.2s;
+
+}
+
+
 .fullscreen {
 opacity: 0;
 }
@@ -378,6 +442,7 @@ background-color: #000;
 align-content: center;
 position: relative;
 z-index: 0;
+
 }
 
 .white-bg {
@@ -408,6 +473,19 @@ z-index: 0;
 .white-bg .links a:hover:after {
   cursor: pointer;
   transform: scaleX(1);
+}
+
+
+.white-bg .border-menu:before {
+  content: "";
+  position: absolute;
+  top: 0.25em;
+  left: 30px;
+  width: 40px;
+  height: 10px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+    cursor: pointer;
 }
 
 .header-text {
@@ -483,9 +561,6 @@ text-transform: uppercase;
   cursor: pointer;
   transform: scaleX(1);
 }
-
-
-
 
 
 .main {
@@ -666,7 +741,13 @@ text-align: right;
 
   }
 
+.links {
+  display: none;
+}
 
+.menu {
+  display: block;
+}
 
   .links a {
     display: block;
