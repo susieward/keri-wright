@@ -21,15 +21,15 @@
 
 
   <div class="work-item">
-
+            <router-link to="/find-a-church">
             <div class="work-img-container">
-              <router-link to="/find-a-church"><img class="work-img" src="./images/umcom.jpg" /></router-link>
+              <img class="work-img" src="./images/umcom.jpg" />
 
               <div class="work-desc">
                 <p>
                 A search engine project in development that helps people find a United Methodist Church near them.</p>
               </div>
-            </div>
+            </div></router-link>
 
             <div class="work-title">
               <router-link to="/find-a-church">Find A Church</router-link>
@@ -42,13 +42,14 @@
           </div>
 
           <div class="work-item">
+            <router-link to="/sitecore">
             <div class="work-img-container">
-              <router-link to="/sitecore"><img class="work-img" src="./images/resource.jpg" /></router-link>
+              <img class="work-img" src="./images/resource.jpg" />
 
               <div class="work-desc">
                 <p>A Wordpress site in development created for training the employees at United Methodist Communications on our CMS Platform.</p>
               </div>
-            </div>
+            </div></router-link>
 
             <div class="work-title">
                 <router-link to="/sitecore">Sitecore Training</router-link>
@@ -62,13 +63,14 @@
 
 
     <div class="work-item">
+      <router-link to="/what-we-do">
           <div class="work-img-container">
-                <router-link to="/what-we-do"><img class="work-img" src="./images/whatwedo.jpeg" /></router-link>
+                <img class="work-img" src="./images/whatwedo.jpeg" />
 
                 <div class="work-desc">
                         <p>A Landing Page made for United Methodist Communications</p>
                         </div>
-          </div>
+          </div></router-link>
 
             <div class="work-title">
                   <router-link to="/what-we-do">What We Do</router-link>
@@ -81,13 +83,14 @@
                     </div>
 
           <div class="work-item">
+            <router-link to="/source">
             <div class="work-img-container">
-              <router-link to="/source"><img class="work-img" src="./images/sourcegrey.jpeg" /></router-link>
+              <img class="work-img" src="./images/sourcegrey.jpeg" />
               <div class="work-desc">
                 <p>A Subscription Landing Page made for United Methodist Communications </p>
               </div>
 
-            </div>
+            </div></router-link>
 
             <div class="work-title">
               <router-link to="/source">The Source</router-link>
