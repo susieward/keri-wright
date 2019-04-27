@@ -19,16 +19,23 @@
           <div class="work-container">
 
 
-          <div class="work-item">
+
+  <div class="work-item">
+
             <div class="work-img-container">
               <router-link to="/find-a-church"><img class="work-img" src="./images/umcom.jpg" /></router-link>
+
+              <div class="work-desc">
+                <p>
+                A search engine project in development that helps people find a United Methodist Church near them.</p>
+              </div>
             </div>
 
             <div class="work-title">
               <router-link to="/find-a-church">Find A Church</router-link>
             </div>
 
-            <div class="work-desc">
+            <div class="work-desc-mobile">
               A search engine project in development that helps people find a United Methodist Church near them.
             </div>
 
@@ -37,29 +44,37 @@
           <div class="work-item">
             <div class="work-img-container">
               <router-link to="/sitecore"><img class="work-img" src="./images/resource.jpg" /></router-link>
+
+              <div class="work-desc">
+                <p>A Wordpress site in development created for training the employees at United Methodist Communications on our CMS Platform.</p>
+              </div>
             </div>
 
             <div class="work-title">
                 <router-link to="/sitecore">Sitecore Training</router-link>
             </div>
 
-            <div class="work-desc">
-              A Wordpress site in development created for training the employees at United Methodist Communications on our CMS Platform.
-            </div>
+            <div class="work-desc-mobile">
+                    A Wordpress site in production created for training the employees at United Methodist Communications on our CMS Platform.
+                    </div>
 
           </div>
 
 
-                    <div class="work-item">
-                      <div class="work-img-container">
-                        <router-link to="/what-we-do"><img class="work-img" src="./images/whatwedo.jpeg" /></router-link>
-                      </div>
+    <div class="work-item">
+          <div class="work-img-container">
+                <router-link to="/what-we-do"><img class="work-img" src="./images/whatwedo.jpeg" /></router-link>
 
-                      <div class="work-title">
-                        <router-link to="/what-we-do">What We Do</router-link>
-                      </div>
+                <div class="work-desc">
+                        <p>A Landing Page made for United Methodist Communications</p>
+                        </div>
+          </div>
 
-                      <div class="work-desc">
+            <div class="work-title">
+                  <router-link to="/what-we-do">What We Do</router-link>
+              </div>
+
+              <div class="work-desc-mobile">
                       A Landing Page made for United Methodist Communications
                       </div>
 
@@ -68,13 +83,17 @@
           <div class="work-item">
             <div class="work-img-container">
               <router-link to="/source"><img class="work-img" src="./images/sourcegrey.jpeg" /></router-link>
+              <div class="work-desc">
+                <p>A Subscription Landing Page made for United Methodist Communications </p>
+              </div>
+
             </div>
 
             <div class="work-title">
               <router-link to="/source">The Source</router-link>
             </div>
 
-            <div class="work-desc">
+            <div class="work-desc-mobile">
               A Subscription Landing Page made for United Methodist Communications
             </div>
 
@@ -96,6 +115,15 @@ export default {
 </script>
 
 <style>
+
+.work-desc-mobile {
+
+  font-family: 'Montserrat Regular';
+  color: #fff;
+  font-size: 18px;
+  line-height: 26px;
+  display: none;
+}
 
 .umcom {
 padding: 0;
@@ -152,6 +180,7 @@ height: 80px;
   text-transform: uppercase;
   padding-right: 400px;
   padding-left: 30px;
+  position: relative;
 }
 
 .work {
@@ -161,6 +190,7 @@ height: 80px;
   justify-content: center;
   max-width: 700px;
   margin: auto;
+  position: relative;
 }
 
 .work-container {
@@ -170,30 +200,108 @@ height: 80px;
   width: 100%;
   grid-gap: 150px;
   margin-top: 50px;
+  position: relative;
 
-}
-
-.work-item {
-  display: grid;
-  grid-template-rows: auto auto auto;
-  grid-gap: 20px;
-}
-
-.work-img-container {
-display: grid;
-max-height: 500px;
-overflow: hidden;
 }
 
 #redtoken {
   background-color: #FDAFA4;
 }
 
-.work-img {
-width: 100%;
-height:auto;
-object-fit: cover;
 
+.work-item {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-gap: 20px;
+  position: relative;
+}
+
+
+.work-img {
+
+}
+
+.work-img-container {
+display: grid;
+max-height: 500px;
+overflow: hidden;
+position: relative;
+cursor: pointer;
+background: #fc8372;
+}
+
+
+.work-img-container img {
+  object-fit: cover;
+max-width: none;
+width: -webkit-calc(100% + 60px);
+ width: calc(100% + 60px);
+height:auto;
+opacity: 1;
+position: relative;
+display: block;
+-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+transition: opacity 0.35s, transform 0.35s;
+-webkit-transform: translate3d(-30px, 0, 0) scale(1.12);
+transform: translate3d(-30px, 0, 0) scale(1.12);
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.work-img-container:hover img {
+  opacity: 0.5;
+-webkit-transform: translate3d(0, 0, 0) scale(1);
+transform: translate3d(0, 0, 0) scale(1);
+
+}
+
+
+.work-desc {
+  padding: 2em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.work-desc::before, .work-desc::after {
+  pointer-events: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: '';
+}
+
+.work-desc p {
+  text-transform: uppercase;
+
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  font-family: 'Montserrat Regular';
+  color: #fff;
+  font-size: 18px;
+  line-height: 26px;
+  width: 50%;
+  padding: 0px 10px 0 0;
+ border-right: 1px solid #fff;
+ text-align: right;
+ opacity: 0;
+ -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+ transition: opacity 0.35s, transform 0.35s;
+ -webkit-transform: translate3d(-40px, 0, 0);
+ transform: translate3d(-40px, 0, 0);
+}
+
+
+.work-desc:hover p {
+  opacity: 1;
+ -webkit-transform: translate3d(0, 0, 0);
+ transform: translate3d(0, 0, 0);
 }
 
 .work-title {
@@ -212,14 +320,7 @@ object-fit: cover;
   color: #fff;
 }
 
-.work-desc {
-  font-family: 'Montserrat Regular';
-  color: #fff;
 
-  font-size: 18px;
-  line-height: 26px;
-
-}
 
 @media screen and (max-width: 900px){
 
@@ -278,6 +379,11 @@ object-fit: cover;
 
 }
 
+
+
+
+
+
 @media screen and (max-width: 600px){
   .umcom {
     max-width: 550px;
@@ -304,6 +410,43 @@ object-fit: cover;
   }
 
 
+  .work-img-container {
+  display: grid;
+  max-height: 500px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  }
+
+
+  .work-img-container img {
+    object-fit: cover;
+  width: 100%;
+  height:auto;
+  opacity: 1;
+  position: relative;
+  display: block;
+
+  -webkit-transform: none;
+  transform: none;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  }
+
+
+  .work-img-container:hover img {
+    opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+
+  .work-img {
+
+    width: 100%;
+    height:auto;
+    object-fit: cover;
+  }
+
 
 
     .work-title {
@@ -312,9 +455,36 @@ object-fit: cover;
     }
 
 
-    .work-desc {
+    .work-desc-mobile {
+      display: block;
       font-size: 16px;
       line-height: 22px;
+    }
+
+
+    .work-desc p {
+      text-transform: uppercase;
+
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      font-family: 'Montserrat Regular';
+      color: #fff;
+      font-size: 18px;
+      line-height: 26px;
+      width: 50%;
+      padding: 0px 10px 0 0;
+     border-right: 1px solid #fff;
+     text-align: right;
+     opacity: 0;
+     -webkit-transform: none;
+     transform: none;
+    }
+
+
+    .work-desc:hover p {
+      opacity: 0;
+     -webkit-transform: none;
+     transform: none;
     }
 
 }
