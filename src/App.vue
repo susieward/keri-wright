@@ -227,7 +227,7 @@ opacity: 1;
   grid-template-rows: auto auto auto;
   grid-gap: 30px;
   margin-top: 43px;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .nav-show span {
@@ -255,7 +255,7 @@ font-family: 'Montserrat Regular';
 
 .nav-hide {
 
-z-index: -1;
+
 height: 0vh;
 
 transition: 0.5s;
@@ -393,7 +393,7 @@ transition: 0.5s;
   font-smoothing: antialiased;
   color: #fff;
   background-color: #000;
-  z-index: 1;
+  z-index: 0;
 position: relative;
 overflow: hidden;
   grid-template-areas:
