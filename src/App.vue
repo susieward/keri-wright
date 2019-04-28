@@ -51,9 +51,10 @@ cool project you need designed please get in touch!
       <span class="header-text">pleased to meet you</span>
       <div class="links" :class="{ 'stacked-links' : workPages}">
 
+          <span id="work" v-show="workPages"><router-link to="/umcom">work projects</router-link></span>
         <span><router-link to="" @click.native="showContact">contact</router-link></span>
         <span><router-link to="/">home</router-link></span>
-        <span id="work" v-show="workPages"><router-link to="/umcom">work projects</router-link></span>
+
       </div>
 
       <div class="menu">
@@ -480,7 +481,7 @@ z-index: 0;
   content: "";
   position: absolute;
   top: 0.25em;
-  left: 30px;
+    right: 0;
   width: 40px;
   height: 10px;
   border-top: 2px solid #000;
