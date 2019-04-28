@@ -215,7 +215,7 @@ align-content: flex-start;
 padding-top: 50px;
 text-align: center;
 opacity: 1;
-  background-color: #FDAFA4;
+  background-color: #D86969;
 }
 
 

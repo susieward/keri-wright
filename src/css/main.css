@@ -65,7 +65,7 @@ padding: 0;
   grid-gap: 30px;
 background-color: #fff;
 height: 286px;
-padding: 70px 80px 70px 60px;
+padding: 70px 80px 70px 80px;
 align-content: flex-start;
 width: 1200px;
 margin-right: auto;
@@ -86,6 +86,7 @@ justify-content: center;
 max-width: 1200px;
 margin-right: auto;
 margin-left: auto;
+
 }
 
 .page-img {
