@@ -295,6 +295,8 @@ margin: auto;
 
 .page-main-container {
   padding: 40px 45px 40px 45px;
+  width: 100%;
+  margin: 0;
 }
 
 #what-img {
