@@ -75,7 +75,6 @@ margin-left: auto;
 
 .page-main {
   background-color: #EDEDED;
-  min-height: 700px;
 padding: 0px 0px 100px 0px;
 color: #000;
 
@@ -201,9 +200,7 @@ max-width: 100%;
 margin: auto;
 }
 
-#source-img {
-  border: 10px solid #fff;
-}
+
 
 #what-img {
   max-width: 80%;

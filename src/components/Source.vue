@@ -11,7 +11,7 @@
 
       </div>
 
-      <div class="page-main">
+      <div class="page-main" id="source">
         <div class="page-main-container">
           <img class="page-img" id="source-img" src="./images/thesource.png" />
         </div>
@@ -28,12 +28,15 @@ export default {
 
 </script>
 <style>
+#source-img {
+  border: 10px solid #fff;
+}
 
 @media screen and (max-width: 600px){
 
   #source-img {
-    max-width: 100%;
-    margin: auto;
+    width: 100%;
+
       border: 5px solid #fff;
   }
 
