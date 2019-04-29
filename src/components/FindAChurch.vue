@@ -310,11 +310,11 @@
                         the mobile version
                       </div>
 
-                      <div class="mobile-columns">
+                      <div class="mobile-rows">
 
 
-                    <div class="mobile-column">
-                      <div class="mobile-row">
+                    <div class="mobile-row" id="mobile-top">
+                      <div class="mobile-item" id="home">
                         <div class="mobile-text">
                           The home page
                         </div>
@@ -325,28 +325,30 @@
 
                       </div>
 
-                      <div class="mobile-row">
+                      <div class="mobile-item" id="results">
                         <div class="mobile-text">
-                          The filters page
+                          The results page
                         </div>
-
                         <div class="mobile-img-container">
-                        <img class="mobile-img" src="./images/mobile3.png" />
-                          </div>
+                        <img class="mobile-img" src="./images/mobile2.png" />
+                      </div>
                       </div>
                       </div>
 
-                      <div class="mobile-column">
-                        <div class="mobile-row">
+                      <div class="mobile-row" id="mobile-bottom">
+
+                        <div class="mobile-item" id="filters">
                           <div class="mobile-text">
-                            The results page
+                            The filters page
                           </div>
+
                           <div class="mobile-img-container">
-                          <img class="mobile-img" src="./images/mobile2.png" />
-                        </div>
+                          <img class="mobile-img" src="./images/mobile3.png" />
+                            </div>
                         </div>
 
-                        <div class="mobile-row">
+
+                        <div class="mobile-item" id="church-profile">
                           <div class="mobile-text">
                             The church profile page
                           </div>
@@ -679,26 +681,60 @@ margin: auto;
 
 }
 
-.mobile-columns {
+.mobile-rows {
   display: grid;
-  grid-template-columns: auto auto;
-}
-
-
-.mobile-column {
-  display: grid;
-  grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-  justify-content: center;
-  grid-gap: 50px;
+  grid-template-columns: 1fr;
+  grid-gap: 60px;
 }
+
 
 .mobile-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  grid-gap: 0px;
+
+
+}
+
+
+#mobile-top {
+  display: grid;
+  grid-template-areas: 'home results';
+}
+
+#mobile-bottom {
+  display: grid;
+  grid-template-areas: 'filters church-profile';
+}
+
+#home {
+  grid-area: home;
+}
+
+#results {
+  grid-area: results;
+}
+
+#filters {
+  grid-area: filters;
+}
+
+#church-profile {
+  grid-area: church-profile;
+}
+
+.mobile-item {
 display: grid;
 grid-template-columns: 1fr;
 grid-template-rows: auto 1fr;
 grid-gap: 10px;
 }
+
+
+
+
 
 .mobile-text {
   font-size: 20px;
@@ -730,7 +766,18 @@ padding-left: 60px;
 @media screen and (max-width: 1000px){
 
 
+  .mobile-rows {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
 
+    grid-gap: 50px;
+  }
+
+  .mobile-img-container {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 
 
 
@@ -818,6 +865,33 @@ font-size: 26px;
     padding-right: 30px;
     padding-left: 30px;
 
+  }
+
+  .mobile-row {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+
+  .mobile-img-container {
+  display: grid;
+  justify-content: center;
+
+
+  }
+
+
+  #mobile-top {
+    display: grid;
+    grid-template-areas: 'home'
+                        'results';
+  }
+
+  #mobile-bottom {
+    display: grid;
+    grid-template-areas: 'filters'
+                          'church-profile';
   }
 
 

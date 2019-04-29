@@ -17,6 +17,9 @@
         </div>
       <div class="projects">
         <div class="proj-top">
+          <div class="profile-img-container">
+            <img class="profile-img" src="./images/profile.jpg" />
+          </div>
           <p>
             I’m a UX designer currently working for United Methodist Communications in Nashville, Tennessee. My passions lie in bringing visions to life and creating a more positive environment for users online.
           </p>
@@ -82,12 +85,8 @@ position: relative;
   display: grid;
   align-content: center;
   justify-content: center;
-
   min-height: 80vh;
   position: relative;
-
-
-
 
 }
 
@@ -111,18 +110,19 @@ grid-template-columns: auto auto;
   justify-content: center;
   align-content: flex-start;
 margin-top: 10px;
+
 }
 
 .line-item1 {
-height: 100px;
+height: 140px;
   border-right: 2px solid #fff;
   width: 50px;
+
 }
 
 .line-item2 {
-  height: 80px;
-
-    width: 50px;
+  height: 140px;
+  width: 50px;
 }
 
 
@@ -136,26 +136,50 @@ height: 100px;
 
   min-height: 400px;
   position: relative;
+  grid-gap: 100px;
+  margin-top: 20px;
 
 
 }
 
 .proj-top {
   display: grid;
+  grid-template-columns: auto auto;
   justify-content: center;
+  grid-gap: 50px;
   text-align: center;
+  justify-content: center;
+  align-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.profile-img-container {
+  max-height: 150px;
+  max-width: 150px;
+
+}
+
+
+.profile-img {
+  width: 100%;
+    border-radius: 50%;
 }
 
 .proj-top p {
-  text-align: center;
+  text-align: left;
   margin: auto;
   color: #959595;
-    max-width: 700px;
+    max-width:600px;
     min-width: auto;
     font-size: 18px;
     line-height: 24px;
     font-family: 'Overpass Mono Bold';
+
 }
+
+
 
 .proj-bottom {
   display: grid;
@@ -409,6 +433,11 @@ display: none;
     line-height: 26px;
   }
 
+
+.proj-top {
+  grid-gap: 20px;
+  padding: 10px;
+}
 
     .proj-title1 {
       font-size: 16px;
