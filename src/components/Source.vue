@@ -36,7 +36,6 @@ export default {
 
   #source-img {
     width: 100%;
-
       border: 5px solid #fff;
   }
 

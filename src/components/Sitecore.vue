@@ -16,16 +16,27 @@
           <div class="sitecore-container">
 
 
-          <div class="sitecore-top-text">
-            <p>The volume of information on each page can be quite overwhelming, so to reduce the sense of information overload, I placed the individual sections in an accordion that is collapsed by default.</p>
-
-<p>This site was developed in WordPress, allowing users to easily update the training information without the aid of a developer.</p>
-
-          </div>
             <div class="sitecore-images-container">
-              <img class="sitecore-img" src="./images/sitecore1.png" />
+              <div class="sitecore-img-item">
 
-              <img class="sitecore-img" src="./images/sitecore2.png" />
+                          <div class="sitecore-top-text">
+                            <p>The volume of information on each page can be quite overwhelming, so to reduce the sense of information overload, I placed the individual sections in an accordion that is collapsed by default.</p>
+
+                <p>This site was developed in WordPress, allowing users to easily update the training information without the aid of a developer.</p>
+
+                          </div>
+                          <img class="sitecore-img" src="./images/sitecore1.png" />
+              </div>
+
+<div class="sitecore-img-item">
+  <div class="sitecore-top-text">
+    <p>
+      With accordion expanded
+    </p>
+  </div>
+    <img class="sitecore-img" src="./images/sitecore2.png" />
+</div>
+
             </div>
 
         </div>
@@ -46,18 +57,17 @@ export default {
 <style>
 
 .sitecore-container {
-  display: grid;
-  grid-gap: 30px;
+
 }
 .sitecore-top-text {
   font-size: 18px;
   line-height: 26px;
-
 }
 
 
-.sitecore-top-text-p {
-
+.sitecore-top-text p {
+margin-top: 0;
+padding: 0;
 }
 
 .sitecore-images-container {
@@ -65,6 +75,13 @@ export default {
   grid-auto-rows: auto;
   grid-template-columns: 1fr;
   grid-gap: 70px;
+}
+
+.sitecore-img-item {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
 }
 
 .sitecore-img {
@@ -77,6 +94,11 @@ export default {
   .sitecore-img {
     max-width: 100%;
     margin: auto;
+  }
+
+
+  .sitecore-img-item {
+      grid-gap: 10px;
   }
 
 }
