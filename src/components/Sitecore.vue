@@ -13,7 +13,15 @@
 
       <div class="page-main">
         <div class="page-main-container">
+          <div class="sitecore-container">
 
+
+          <div class="sitecore-top-text">
+            <p>The volume of information on each page can be quite overwhelming, so to reduce the sense of information overload, I placed the individual sections in an accordion that is collapsed by default.</p>
+
+<p>This site was developed in WordPress, allowing users to easily update the training information without the aid of a developer.</p>
+
+          </div>
             <div class="sitecore-images-container">
               <img class="sitecore-img" src="./images/sitecore1.png" />
 
@@ -21,6 +29,8 @@
             </div>
 
         </div>
+
+          </div>
       </div>
     </div>
 
@@ -35,6 +45,21 @@ export default {
 </script>
 <style>
 
+.sitecore-container {
+  display: grid;
+  grid-gap: 30px;
+}
+.sitecore-top-text {
+  font-size: 18px;
+  line-height: 26px;
+
+}
+
+
+.sitecore-top-text-p {
+
+}
+
 .sitecore-images-container {
   display: grid;
   grid-auto-rows: auto;
@@ -43,7 +68,7 @@ export default {
 }
 
 .sitecore-img {
-  max-width: 75%;
+  max-width: 100%;
   margin: auto;
 }
 

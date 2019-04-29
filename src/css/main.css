@@ -78,12 +78,16 @@ margin-left: auto;
   min-height: 700px;
 padding: 0px 0px 100px 0px;
 color: #000;
+
 }
 
 .page-main-container {
   display: grid;
-padding: 100px 105px 100px 105px;
+padding: 80px 80px 80px 80px;
 grid-gap: 100px;
+max-width: 1200px;
+margin-right: auto;
+margin-left: auto;
 }
 
 .page-content-container {
