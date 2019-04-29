@@ -5,7 +5,7 @@
       <div class="page-title">
         <span class="page-title-text">red token project</span>
         <span class="page-text">
-          The Red Token Project is a concept for a charity that will provide tampons to homeless women in the Nashville area. The goal was to have a website that explains what the organization does as well as display event dates and an option to donate to the cause.
+          The Red Token Project is a charity concept to bring sanitary products to women, trans men and non-binary people. This is a personal project of mine in its early stages, but it provided a fun and exciting design opportunity for its web presence.
         </span>
       </div>
 
@@ -155,7 +155,7 @@
 
                               <div class="vision-text">
                             <p>
-                              Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                              I chose to break up these four questions into panels, alternating between a 40/60 text/image panel, and a full width text panel. This would increase the impact of each panel while providing space for graphics, which provide a succinct visual summary of what the charity does without interfering with the eye’s natural movement through the page.
 
                             </p>
                           </div>
@@ -170,7 +170,7 @@
 
                           <div class="vision-text">
                             <p>
-                              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                              The wireframe largely followed the layout of my sketch, but I added some offset between the header logo and the content boxes to help the content stand out visually.
 
 
                             </p>
@@ -202,6 +202,9 @@
 
                     <div class="mockup-text">
                       The home page
+                      <p>
+                        Since visually breaking up the content panels was important, I chose a relatively high-contrast color palette. Often, media or copy related to tampons, wipes, pads, and other hygiene products is euphemistic to the point of obscurity. Since this charity deals with a real and serious problem, our users want content and graphics that are more direct. Without the resources of a dedicated graphic designer available, I created the graphics myself to ensure they were as cohesive as possible with the overall art direction of the site.
+                      </p>
                     </div>
 
                     <div class="mockup-img-container">
@@ -214,7 +217,9 @@
                     <div class="mockup-text">
                       The events page
                       <p>
-                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        An important part of this charity is hosting public events to collect donations and distribute products to the homeless. Traditional event pages use a calendar of some kind, with Red Token events expected to be large but relatively infrequent, listing every day as on a calendar would be distracting noise and could prevent a visitor from finding an event.
+Instead, I opted for a list solution that displayed the nearest few upcoming events with their date and location.
+
                       </p>
                     </div>
 
@@ -227,7 +232,7 @@
 
                     <div class="mockup-text">
                       The contact page
-                      <p>Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      <p>The contact page carries over the simple look of the other pages, with a text area reminiscent of writing a physical letter. The text area is kept small to encourage succinct messages.</p>
                     </div>
 
                     <div class="mockup-img-container">
@@ -238,7 +243,7 @@
                   <div class="mockup-item">
                     <div class="mockup-text">
                       The donate page
-                      <p>Commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      <p>The donation page is similarly direct and uncluttered, with the default donation level being the $3 needed to purchase a box of tampons, pads, or wipes. If the user has reached this page, they have responded to one of our CTAs, so the donation page is kept as simple as possible to keep the user focused.</p>
                     </div>
 
                     <div class="mockup-img-container">
@@ -264,7 +269,8 @@
                   <div class="section-paragraph-container">
                     <div class="section-paragraph">
 
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      <p>As a personal endeavor, the Red Token Project site provided me with a lot of design freedom, but very little in the way of external help for media or research. I had to learn to do produce these with the time and opportunities I had available. I learned to be resourceful in gathering these things on my own when necessary, and ultimately produced an engaging and rewarding site that serves to help an underserved part of our community
+
                         </p>
                       </div>
 

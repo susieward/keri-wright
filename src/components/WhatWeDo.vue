@@ -6,7 +6,7 @@
 
         <span class="page-title-text">what we do</span>
         <span class="page-text">
-          What We Do is a section that will live on United Methodist Communications's home page that tells about the company. This page will be created in Sitecore, our CMS. The goal was to create a design that encompasses the site's color schemes while taking into consideration preexisting components in Sitecore.
+          This is a sort of “About Us” page for United Methodist Communications. I was provided with a continuous paragraph of copy and a hero image. I broke up the text to be more legible, and did some custom changes to the default Resource UMC hero styling to include the text next to it, as requested by the stakeholders.
         </span>
 
       </div>

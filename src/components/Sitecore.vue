@@ -6,7 +6,7 @@
 
         <span class="page-title-text">Sitecore Training</span>
         <span class="page-text">
-          This is a site in development for the employees at United Methodist to train them on our CMS platform. The goal was to convert a training packet into a website for easier access by our employees.
+          This page is an internal training and reference site for our new CMS, Sitecore. Sitecore can be a daunting CMS with a steep learning curve, so I opted to keep the training site design simple. Many elements of the site originated in a training packet that was distributed to editors, so design synergy with this packet was key.
         </span>
 
       </div>

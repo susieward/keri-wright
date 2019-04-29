@@ -27,7 +27,7 @@
 
               <div class="work-desc">
                 <p>
-                A search engine project in development that helps people find a United Methodist Church near them.</p>
+                A web application that helps people search for United Methodist churches across the globe</p>
               </div>
             </div></router-link>
 
@@ -36,7 +36,7 @@
             </div>
 
             <div class="work-desc-mobile">
-              A search engine project in development that helps people find a United Methodist Church near them.
+              A web application that helps people search for United Methodist churches across the globe
             </div>
 
           </div>
@@ -47,7 +47,7 @@
               <img class="work-img" src="./images/resource.jpg" />
 
               <div class="work-desc">
-                <p>A Wordpress site in development created for training the employees at United Methodist Communications on our CMS Platform.</p>
+                <p>An internal training and reference site for the employees at United Methodist Communications</p>
               </div>
             </div></router-link>
 
@@ -56,7 +56,7 @@
             </div>
 
             <div class="work-desc-mobile">
-                    A Wordpress site in production created for training the employees at United Methodist Communications on our CMS Platform.
+                    An internal training and reference site for the employees at United Methodist Communications
                     </div>
 
           </div>
@@ -68,7 +68,7 @@
                 <img class="work-img" src="./images/whatwedo.jpeg" />
 
                 <div class="work-desc">
-                        <p>A Landing Page made for United Methodist Communications</p>
+                        <p>A landing page made for United Methodist Communications describing  the company and our role in the broader United Methodist Church</p>
                         </div>
           </div></router-link>
 
@@ -77,7 +77,7 @@
               </div>
 
               <div class="work-desc-mobile">
-                      A Landing Page made for United Methodist Communications
+                    A landing page made for United Methodist Communications describing  the company and our role in the broader United Methodist Church
                       </div>
 
                     </div>
@@ -87,7 +87,7 @@
             <div class="work-img-container">
               <img class="work-img" src="./images/sourcegrey.jpeg" />
               <div class="work-desc">
-                <p>A Subscription Landing Page made for United Methodist Communications </p>
+                <p>A newsletter subscription page made for leaders in the church</p>
               </div>
 
             </div></router-link>
@@ -97,7 +97,7 @@
             </div>
 
             <div class="work-desc-mobile">
-              A Subscription Landing Page made for United Methodist Communications
+              A newsletter subscription page made for leaders in the church
             </div>
 
           </div>

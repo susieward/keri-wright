@@ -6,8 +6,7 @@
 
         <span class="page-title-text">The Source</span>
         <span class="page-text">
-          The Source is a newsletter sign-up landing page for United Methodist Communications.<br />
-          The goal for this project was to match the design of a preexisting campaign page called NeighborlyUMC.
+          The Source is a e-newsletter tied to another marketing initiative called Neighborly UMC. With the subscription form and the Neighborly UMC page living on two different platforms (Marketo and Sitecore) I was tasked with creating a form that could match the look and feel of the Sitecore page seamlessly.
         </span>
 
       </div>
