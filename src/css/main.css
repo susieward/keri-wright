@@ -83,7 +83,7 @@ color: #000;
 
 .page-main-container {
   display: grid;
-padding: 80px 80px 80px 80px;
+padding: 100px 100px 100px 100px;
 grid-gap: 100px;
 max-width: 1200px;
 margin-right: auto;
