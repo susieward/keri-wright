@@ -48,7 +48,7 @@ cool project you need designed please get in touch!
 
 
     <div class="header" ref="header" :class="{ 'white-bg' : showWhite} ">
-      <span class="header-text">pleased to meet you</span>
+      <span class="header-text" style="cursor: pointer" @click="routeHome">pleased to meet you</span>
       <div class="links" :class="{ 'stacked-links' : workPages}">
 
           <span id="work" v-show="workPages"><router-link to="/umcom">work projects</router-link></span>

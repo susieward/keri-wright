@@ -849,7 +849,26 @@ height: 50px;
 
   .vision-title {
       font-size: 24px;
+      text-align: left;
   }
+
+  .vision-text {
+    padding-top: 10px;
+
+  }
+  .vision-text p {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    line-height: 26px;
+
+  }
+
+
+.mockup-title {
+
+}
 
 
 
