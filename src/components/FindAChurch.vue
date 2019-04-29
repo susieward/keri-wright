@@ -12,28 +12,28 @@
       </div>
 
       <div class="page-main" id="church-main">
-        <div class="page-main-container" id="church-main-container">
+        <div class="page-main-container">
 
-          <div class="find-top-text">
+          <div class="content-top-text">
             <p>
               Find A Church is the most popular web service offered by United Methodist Communications, with over 1,000 views per day. Being given this project was a big responsibility and a rewarding opportunity.
 
             </p>
           </div>
-          <div class="find-a-church-container">
+          <div class="page-content-container">
 
 
-              <div class="church-section">
+              <div class="content-section">
 
-                <div class="find-title">
+                <div class="content-title">
                   getting started
                 </div>
 
-              <div class="church-subsections">
+              <div class="content-subsections">
 
 
-                <div class="church-subsection">
-                  <div class="find-subheader">
+                <div class="content-subsection">
+                  <div class="content-subheader">
 
                     The requirements
 
@@ -69,9 +69,9 @@
 
                 </div>
 
-                <div class="find-list-container">
+                <div class="content-list-container">
 
-                  <div class="find-list-row">
+                  <div class="content-list-row">
                     <div class="list-circle">
                       <span class="circle">	&#x2B24;</span>
                     </div>
@@ -84,7 +84,7 @@
                       </div>
 
 
-                      <div class="find-list-row">
+                      <div class="content-list-row">
                         <div class="list-circle">
                           <span class="circle">	&#x2B24;</span>
                         </div>
@@ -97,7 +97,7 @@
                             </div>
                           </div>
 
-                <div class="find-list-row">
+                <div class="content-list-row">
                     <div class="list-circle">
                     <span class="circle">	&#x2B24;</span>
                     </div>
@@ -108,7 +108,7 @@
                     </div>
                     </div>
 
-                    <div class="find-list-row">
+                    <div class="content-list-row">
                       <div class="list-circle">
                           <span class="circle">	&#x2B24;</span>
                       </div>
@@ -123,9 +123,9 @@
 
                 </div>
 
-                <div class="church-subsection">
+                <div class="content-subsection">
 
-                  <div class="find-subheader">
+                  <div class="content-subheader">
 
                     Research
                   </div>
@@ -190,19 +190,19 @@
 
               </div>
 
-              <div class="church-section">
-                  <div class="find-title">
+              <div class="content-section">
+                  <div class="content-title">
                     vision
                   </div>
 
                   <div class="vision">
-                      <div class="vision-container">
+                      <div class="vision-container" id="vision-top">
 
-                        <div class="vision-img-container">
+                        <div class="vision-img-container" id="sketchimg">
                           <img class="vision-img" src="./images/vision_sketch.png" />
                         </div>
 
-                        <div class="vision-text-container">
+                        <div class="vision-text-container" id="sketchtext">
 
                             <div class="vision-title">
                               the initial sketch
@@ -217,9 +217,9 @@
                         </div>
                       </div>
 
-                      <div class="vision-container">
+                      <div class="vision-container" id="vision-bottom">
 
-                        <div class="vision-text-container">
+                        <div class="vision-text-container" id="wiretext">
 
                             <div class="vision-title">
                               the wireframe
@@ -235,7 +235,7 @@
                         </div>
 
 
-                      <div class="vision-img-container">
+                      <div class="vision-img-container" id="wireimg">
                         <img class="vision-img" src="./images/vision_wireframe.jpg" />
                       </div>
 
@@ -246,7 +246,7 @@
 
               </div>
 
-              <div class="church-section">
+              <div class="content-section">
                 <div class="mockup">
 
                 <div class="mockup-title">
@@ -367,14 +367,14 @@
                     </div>
                 </div>
 
-                <div class="church-section">
-                  <div class="find-title">
+                <div class="content-section">
+                  <div class="content-title">
                     things I learned along the way
                   </div>
 
-                  <div class="church-subsections">
+                  <div class="content-subsections">
 
-                    <div class="church-subsection">
+                    <div class="content-subsection">
 
 
                   <div class="section-paragraph-container">
@@ -456,7 +456,7 @@ margin-top: 3px;
   width: 30px;
   height: 30px;
   padding: 10px 16px;
-  border: 1px solid blue;
+
 }
 
 
@@ -471,99 +471,14 @@ margin-top: 3px;
 #church-main-container {
   padding: 100px;
 justify-content: normal;
-grid-gap: 100px;
+
 }
 
 .top-container {
 
 }
 
-.find-a-church-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: auto;
-grid-gap: 150px;
-position: relative;
-}
 
-
-.find-top-text {
-display: grid;
-width: 100%;
-
-}
-
-.find-top-text p {
-  color: #D86969;
-  font-family: 'Montserrat Medium';
-  font-size: 20px;
-  line-height: 28px;
-  margin: 0;
-  padding: 0;
-}
-
-
-
-.church-section {
-
-display: grid;
-grid-gap: 30px;
-}
-
-.church-subsections {
-  display: grid;
-  grid-gap: 80px;
-
-
-
-}
-
-.church-subsection {
-
-}
-
-.section-paragraph-container {
-display: grid;
-grid-gap: 25px;
-}
-
-
-.section-paragraph {
-
-}
-
-
-.section-paragraph p {
-  color: #000;
-  font-size: 18px;
-  line-height: 26px;
-  margin: 0;
-  padding: 0;
-}
-
-.find-subheader {
-  color: #D86969;
-  font-size: 22px;
-  line-height: 28px;
-  margin-bottom: 30px;
-
-  font-family: 'Montserrat Medium';
-}
-
-.find-list-container {
-  display: grid;
-  grid-template-rows: auto auto auto auto;
-  grid-template-columns: 1fr;
-  margin-top: 50px;
-  grid-gap: 20px;
-  max-width: 95%;
-
-}
-.find-list-row {
-display: grid;
-grid-template-columns: auto 1fr;
-grid-gap: 15px;
-}
 
 .list-circle {
   color:#D86969;
@@ -581,14 +496,7 @@ grid-gap: 15px;
   margin-bottom: 20px;
 }
 
-.find-title {
-  font-family: 'Montserrat Regular';
-  color: #000;
-  text-transform: uppercase;
-  font-size: 34px;
-  line-height: normal;
 
-}
 
 .find-items {
   display: grid;
@@ -608,6 +516,7 @@ grid-gap: 20px;
 
 }
 
+
 /* VISION */
 
 .vision {
@@ -621,6 +530,7 @@ grid-gap: 20px;
 .vision-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
   grid-gap: 55px;
 
 }
@@ -631,6 +541,36 @@ max-width: 1fr;
 
 .vision-img {
 width: 100%;
+}
+
+
+#vision-top{
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'sketchimg sketchtext';
+
+}
+
+#vision-bottom {
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'wiretext wireimg';
+}
+
+#sketchimg {
+  grid-area: sketchimg;
+}
+
+#sketchtext {
+  grid-area: sketchtext;
+}
+
+#wireimg {
+  grid-area: wireimg;
+}
+
+#wiretext {
+  grid-area: wiretext;
 }
 
 .vision-text-container {
@@ -790,22 +730,96 @@ padding-left: 60px;
 @media screen and (max-width: 1000px){
 
 
-  #church-main-container {
-      display: grid;
 
-    justify-content: center;
-    grid-template-columns: 1fr auto;
-    max-width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
 
-  }
 
 
 }
 
 
 @media screen and (max-width: 800px){
+
+
+
+
+  .vision {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-gap: 50px;
+
+  }
+
+  .vision-container {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-gap: 55px;
+
+  }
+
+
+  #vision-top {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'sketchtext'
+                          'sketchimg';
+  }
+
+
+  #vision-bottom {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'wiretext'
+                          'wireimg';
+  }
+
+
+  .vision-title {
+
+font-size: 26px;
+  }
+
+  .vision-text {
+    padding-top: 10px;
+
+  }
+  .vision-text p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    line-height: 26px;
+
+  }
+
+
+  .mockup-title {
+    text-transform: uppercase;
+    color: #D86969;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+
+  .mockup-items {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr;
+    grid-gap: 100px;
+  padding-right: 0px;
+  padding-left: 0px;
+  }
+
+
+  .mockup-item {
+
+    padding-right: 30px;
+    padding-left: 30px;
+
+  }
+
 
 
 }
@@ -831,22 +845,32 @@ height: 50px;
 
   }
 
-  .find-title {
 
-        font-size: 28px;
 
+  .vision-title {
+      font-size: 24px;
   }
 
 
-  .find-mobile {
-    display: grid;
-    grid-auto-rows: auto;
-    grid-template-columns: 1fr;
-    justify-content: center;
-      width: 80%;
-      margin: auto;
-      grid-gap: 50px;
-  }
+
+    .mockup-text {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+
+    .mockup-text p {
+
+      line-height: 26px;
+    }
+
+
+    .mockup-item {
+
+      padding-right: 0px;
+      padding-left: 0px;
+
+    }
 
 }
 
