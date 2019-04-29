@@ -5,7 +5,7 @@
       <div class="page-title">
         <span class="page-title-text">red token project</span>
         <span class="page-text">
-          The Red Token Project is a charity concept to bring sanitary products to women, trans men and non-binary people. This is a personal project of mine in its early stages, but it provided a fun and exciting design opportunity for its web presence.
+          The Red Token Project is a charity concept to bring sanitary products to women, trans men, and non-binary people. This is a personal project of mine in its early stages, but it provided a fun and exciting design opportunity for its web presence.
         </span>
       </div>
 
@@ -85,7 +85,7 @@
                     </div>
 
                     <div class="list-text">
-                      Who - Who is the charity and who are what do they help?
+                      Who - Who is the charity and who or what do they help?
                         </div>
                       </div>
 
@@ -269,7 +269,7 @@ Instead, I opted for a list solution that displayed the nearest few upcoming eve
                   <div class="section-paragraph-container">
                     <div class="section-paragraph">
 
-                      <p>As a personal endeavor, the Red Token Project site provided me with a lot of design freedom, but very little in the way of external help for media or research. I had to learn to do produce these with the time and opportunities I had available. I learned to be resourceful in gathering these things on my own when necessary, and ultimately produced an engaging and rewarding site that serves to help an underserved part of our community
+                      <p>As a personal endeavor, the Red Token Project site provided me with a lot of design freedom, but very little in the way of external help for media or research. I had to learn to do produce these with the time and opportunities I had available. I learned to be resourceful in gathering these things on my own when necessary, and ultimately produced an engaging and rewarding site that serves to help an underserved part of our community.
 
                         </p>
                       </div>

@@ -389,7 +389,7 @@
 
                       <div class="section-paragraph">
 
-                        <p>Presenting a design with a color pallette and controls that would feel familiar to visitors of our other sites was important. The FAC redesign is a crucial component in a broader overhaul of the UMC web presence. As designers, we often gravitate towards the cutting edge and forward thinking. Business requirements can feel restrictive or onerous - a barrier to our creativity. But knowing when to deliver runway fashion, and when to deliver a stylish but practical coat, is key to the successful reception of our designs.
+                        <p>Presenting a design with a color pallette and controls that would feel familiar to visitors of our other sites was important. The FAC redesign is a crucial component in a broader overhaul of the UMC web presence. As designers, we often gravitate towards the cutting edge and forward thinking. Business requirements can feel restrictive or onerous — a barrier to our creativity. But knowing when to deliver runway fashion, and when to deliver a stylish but practical coat, is key to the successful reception of our designs.
 
                           </p>
                         </div>

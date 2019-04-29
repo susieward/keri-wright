@@ -333,14 +333,31 @@ display: none;
     padding-right: 10px;
     padding-left: 10px;
     min-width: auto;
-    grid-gap: 50px;
+    grid-gap: 60px;
   }
 
+  .proj-top {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items:  center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .profile-img-container {
+margin: auto;
+  }
 
   .proj-top p {
     max-width: 300px;
     font-size: 16px;
     line-height: 26px;
+    text-align: center;
   }
 
   .proj-title1 {
@@ -434,10 +451,6 @@ display: none;
   }
 
 
-.proj-top {
-  grid-gap: 20px;
-  padding: 10px;
-}
 
     .proj-title1 {
       font-size: 16px;

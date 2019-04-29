@@ -151,14 +151,14 @@ grid-template-columns: auto auto;
 }
 
 .umc-line-item1 {
-height: 80px;
+height: 140px;
   border-right: 2px solid #fff;
   margin: auto;
   width: 50px;
 }
 
 .umc-line-item2 {
-  height: 50px;
+  height: 140px;
 
     width: 50px;
 }
