@@ -134,7 +134,7 @@ height: 140px;
   display: grid;
   grid-template-rows: 1fr 1fr;
 
-  min-height: 400px;
+
   position: relative;
   grid-gap: 100px;
   margin-top: 20px;
@@ -410,7 +410,7 @@ margin: auto;
 
   .home {
     max-width: 390px;
-
+padding-bottom: 0px;
   }
 
   .hero-text {
