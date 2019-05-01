@@ -104,7 +104,9 @@ cool project you need designed please get in touch!
 
       <div class="footer-bottom">
         <p>
-          This site was designed by Keri Wright and developed by <a href="https://susieward.dev">Susie Ward</a>.
+          This site was designed by Keri Wright and coded by <a href="https://susieward.dev">Susie Ward</a>.
+      <br />
+          <span class="copyright">&copy; 2019  all rights reserved</span>
         </p>
       </div>
     </div>
@@ -202,6 +204,12 @@ methods: {
 </script>
 
 <style>
+
+
+.copyright {
+  line-height: 28px;
+
+}
 
 .nav-show {
   display: grid;
@@ -688,6 +696,7 @@ font-family: 'Overpass Mono Bold';
 .footer-bottom {
   display: grid;
 justify-content: flex-end;
+text-align: right;
 padding: 0px 50px 30px 50px;
 }
 
@@ -846,6 +855,11 @@ text-align: right;
     .footer-left {
       padding: 30px 50px 0px 50px;
 
+    }
+
+
+    .footer-bottom {
+      text-align: left;
     }
 
 
