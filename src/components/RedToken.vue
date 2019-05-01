@@ -269,7 +269,7 @@ Instead, I opted for a list solution that displayed the nearest few upcoming eve
                   <div class="section-paragraph-container">
                     <div class="section-paragraph">
 
-                      <p>As a personal endeavor, the Red Token Project site provided me with a lot of design freedom, but very little in the way of external help for media or research. I had to learn to do produce these with the time and opportunities I had available. I learned to be resourceful in gathering these things on my own when necessary, and ultimately produced an engaging and rewarding site that serves to help an underserved part of our community.
+                      <p>As a personal endeavor, the Red Token Project site provided me with a lot of design freedom, but very little in the way of external help for media or research. I had to learn to produce these with the time and opportunities I had available. I learned to be resourceful in gathering these things on my own when necessary, and ultimately produced an engaging and rewarding site that serves to help an underserved part of our community.
 
                         </p>
                       </div>
