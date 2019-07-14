@@ -71,6 +71,7 @@ width: 1200px;
 margin-right: auto;
 margin-left: auto;
 
+
 }
 
 .page-main {
@@ -119,6 +120,7 @@ width: 100%;
   display: grid;
   grid-gap: 30px;
 
+
 }
 
 .content-title {
@@ -164,7 +166,7 @@ width: 100%;
 .section-paragraph p {
   color: #000;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 28px;
   margin: 0;
   padding: 0;
 }
@@ -287,8 +289,9 @@ margin: auto;
 .page-title {
   width: auto;
   height: auto;
-  padding: 50px 50px 50px 40px;
+  padding: 50px 40px;
 }
+
 
 .page-main-container {
   padding: 40px 45px 40px 45px;
@@ -299,5 +302,7 @@ margin: auto;
 #what-img {
   max-width: 100%;
 }
+
+
 
 }

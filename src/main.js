@@ -3,6 +3,7 @@ require('../src/css/main.css');
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import App from './App.vue'
+import store from './store'
 import Home from './components/Home.vue'
 import About from './components/About.vue'
 import UMCom from './components/UMCom.vue'
@@ -11,6 +12,7 @@ import FindAChurch from './components/FindAChurch.vue'
 import Source from './components/Source.vue'
 import WhatWeDo from './components/WhatWeDo.vue'
 import Sitecore from './components/Sitecore.vue'
+import Kevin from './components/Kevin.vue'
 import './registerServiceWorker'
 
 Vue.use(VueRouter);
@@ -61,6 +63,12 @@ const routes = [
       path: '/sitecore',
       name: 'Sitecore',
       component: Sitecore
+    },
+
+    {
+      path: '/kevin-williams',
+      name: 'Kevin',
+      component: Kevin
     }
 
 ];
@@ -77,5 +85,6 @@ Vue.config.productionTip = false
 
 new Vue({
   router,
+  store,
   render: h => h(App)
 }).$mount('#app')

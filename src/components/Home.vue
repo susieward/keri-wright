@@ -1,8 +1,26 @@
 <template>
   <div class="home">
       <div class="hero">
-        <div class="hero-text">Hi, I'm Keri.<br />
+        <div class="hero-text" v-if="isAbout === false">
         I combine creativity with technology, and help humans be less frustrated along the way.</div>
+
+        <div class="about-hero" v-if="isAbout === true">
+          <div class="about-hero-container">
+          <div class="about-photo">
+            <div class="profile-img-container">
+
+
+            <img class="profile-img" src="./images/profile.jpg" />
+            </div>
+          </div>
+
+          <div class="about-bio">
+            <p>
+              I’m a UX designer currently working for United Methodist Communications in Nashville, Tennessee.  My passions lie in bringing visions to life and creating a more positive environment for users online.
+            </p>
+          </div>
+              </div>
+        </div>
       </div>
 
         <div class="line">
@@ -15,40 +33,31 @@
           </div>
 
         </div>
-      <div class="projects">
-        <div class="proj-top">
-          <div class="profile-img-container">
-            <img class="profile-img" src="./images/profile.jpg" />
-          </div>
-          <p>
-            I’m a UX designer currently working for United Methodist Communications in Nashville, Tennessee. My passions lie in bringing visions to life and creating a more positive environment for users online.
-          </p>
-        </div>
-
-        <div class="proj-bottom">
-
-          <div class="proj-col1">
-            <div class="proj-title1" @click="goToRed">
-              a personal project
-            </div>
-          </div>
-
-          <div class="proj-col2">
-            <div class="proj-title2" @click="goToUMC">
-              work projects
-            </div>
-          </div>
-
-        </div>
-
+      <div class="home-content-section">
+        <Projects v-if="isAbout === false"></Projects>
+        <About v-if="isAbout === true"></About>
       </div>
 
   </div>
 </template>
 
 <script>
+import About from './About.vue'
+import Projects from './Projects.vue'
 export default {
+data(){
+  return {
+
+  }
+},
   name: 'Home',
+
+  props: ['isAbout'],
+
+  components: {
+    Projects,
+    About
+  },
 
   methods: {
     goToRed: function(){
@@ -79,6 +88,59 @@ position: relative;
 
 }
 
+.about-hero {
+  display: grid;
+
+justify-content: center;
+
+padding-bottom: 30px;
+}
+
+
+.about-hero-container {
+  display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 100px;
+    padding: 0 90px;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+}
+
+.about-photo {
+  width: 100%;
+display: grid;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.about-bio {
+  display: grid;
+  align-content: center;
+
+
+}
+
+.about-bio p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.profile-img-container {
+  max-height: 275px;
+  max-width: 275px;
+
+}
+
+
+.profile-img {
+  width: 100%;
+  height: auto;
+    border-radius: 50%;
+}
+
+
+
 
 .hero {
   grid-area: hero;
@@ -87,14 +149,16 @@ position: relative;
   justify-content: center;
   min-height: 80vh;
   position: relative;
+  padding-bottom: 40px;
+
 
 }
 
 .hero-text {
   font-family: 'Montserrat Regular';
   color: #fff;
-  font-size: 40px;
-  line-height: 55px;
+  font-size: 45px;
+  line-height: 65px;
 
   text-transform: uppercase;
   padding-right: 200px;
@@ -110,6 +174,7 @@ grid-template-columns: auto auto;
   justify-content: center;
   align-content: flex-start;
 margin-top: 10px;
+
 
 }
 
@@ -129,18 +194,14 @@ height: 140px;
 
 
 
-.projects {
+.home-content-section {
   grid-area: projects;
   display: grid;
-  grid-template-rows: 1fr 1fr;
-
-
-  position: relative;
-  grid-gap: 100px;
-  margin-top: 20px;
+  margin-top: 60px;
 
 
 }
+
 
 .proj-top {
   display: grid;
@@ -155,17 +216,7 @@ height: 140px;
 }
 
 
-.profile-img-container {
-  max-height: 150px;
-  max-width: 150px;
 
-}
-
-
-.profile-img {
-  width: 100%;
-    border-radius: 50%;
-}
 
 .proj-top p {
   text-align: left;
@@ -259,9 +310,105 @@ padding-right: 20px;
   border-bottom: 4px solid #fff;
 }
 
+@media screen and (max-width: 1200px){
+
+  .about-hero {
+    display: grid;
+
+  justify-content: center;
+
+  padding-bottom: 0px;
+  }
+
+  .about-hero-container {
+    display: grid;
+
+      grid-gap: 50px;
+      padding: 0 90px;
+      justify-content: center;
+      margin: 0 auto;
+  }
+
+  .profile-img-container {
+    max-height: 200px;
+    max-width: 200px;
+
+  }
+
+
+}
+
+
+@media screen and (max-width: 1000px){
+
+  .about-hero {
+    display: grid;
+
+  justify-content: center;
+
+  padding-bottom: 0px;
+  }
+
+  .about-hero-container {
+    display: grid;
+
+      grid-gap: 50px;
+      padding: 0 50px;
+      justify-content: center;
+      margin: 0 auto;
+  }
+
+
+
+
+
+}
+
 
 @media screen and (max-width: 800px){
 
+
+  .about-hero {
+    display: grid;
+
+  justify-content: center;
+
+padding-top: 30px;
+  }
+
+
+  .about-hero-container {
+    display: grid;
+      grid-template-rows: auto 1fr;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+      padding: 0 40px;
+      justify-content: center;
+      margin: 0 auto;
+  }
+
+  .about-photo {
+    justify-content: center;
+
+  }
+
+  .about-bio {
+    display: grid;
+    align-content: center;
+padding: 0 30px;
+
+  }
+
+  .about-bio p {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .profile-img-container {
+
+
+  }
 
 .home {
   max-width: 700px;
@@ -275,7 +422,7 @@ padding-right: 20px;
     line-height: 45px;
   }
 
-  .projects {
+  .home-content-section {
     padding-right: 20px;
     padding-left: 20px;
     grid-gap: 50px;
@@ -303,6 +450,49 @@ display: none;
 
 
 @media screen and (max-width: 600px){
+
+
+
+    .about-hero {
+      display: grid;
+
+    justify-content: center;
+
+  padding-top: 30px;
+    }
+
+
+    .about-hero-container {
+      display: grid;
+        grid-template-rows: auto 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        padding: 0 40px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+
+
+    .profile-img-container {
+      max-height: 175px;
+      max-width: 175px;
+
+    }
+
+    .about-bio {
+      display: grid;
+      align-content: center;
+  padding: 0 30px;
+
+    }
+
+    .about-bio p {
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+    }
+
   .home {
     max-width: 550px;
 
@@ -329,7 +519,7 @@ display: none;
   }
 
 
-  .projects {
+  .home-content-section {
     padding-right: 10px;
     padding-left: 10px;
     min-width: auto;
@@ -436,7 +626,7 @@ padding-bottom: 0px;
 
 
 
-  .projects {
+  .home-content-section {
     padding-right: 0px;
     padding-left: 0px;
     min-width: auto;
@@ -494,6 +684,22 @@ padding-bottom: 0px;
       .proj-title1:hover:after {
         width: 60%;
       }
+
+
+
+          .about-bio {
+            display: grid;
+            align-content: center;
+        padding: 0 0px;
+
+          }
+
+          .about-bio p {
+            font-size: 16px;
+            line-height: 30px;
+            text-align: center;
+          }
+
 
 
 }

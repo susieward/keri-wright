@@ -9,12 +9,8 @@
 
       </div>
       <div class="nav-links-container">
-
-
-      <span><router-link to="" @click.native="showContact">contact</router-link></span>
-      <span><router-link to="" @click.native="routeHome">home</router-link></span>
-      <span id="work" v-show="workPages"><router-link to="" @click.native="routeProjects">work projects</router-link></span>
-
+        <span><router-link to="" @click.native="routeHome">work</router-link></span>
+        <span><router-link to="" @click.native="routeAbout">about</router-link></span>
       </div>
     </div>
 
@@ -48,12 +44,10 @@ cool project you need designed please get in touch!
 
 
     <div class="header" ref="header" :class="{ 'white-bg' : showWhite} ">
-      <span class="header-text" style="cursor: pointer" @click="routeHome">pleased to meet you</span>
+      <span class="header-text" style="cursor: pointer" @click="routeHome">hi I'm keri</span>
       <div class="links" :class="{ 'stacked-links' : workPages}">
-
-          <span id="work" v-show="workPages"><router-link to="/umcom">work projects</router-link></span>
-        <span><router-link to="" @click.native="showContact">contact</router-link></span>
-        <span><router-link to="/">home</router-link></span>
+        <span><router-link to="" @click.native="routeHome">work</router-link></span>
+        <span><router-link to="" @click.native="routeAbout">about</router-link></span>
 
       </div>
 
@@ -72,7 +66,7 @@ cool project you need designed please get in touch!
   <div class="content">
 
 
-    <router-view></router-view>
+    <router-view :isAbout="isAbout"></router-view>
       </div>
     </div>
 
@@ -81,7 +75,7 @@ cool project you need designed please get in touch!
     </div>
 
     <div class="footer" :class="{ 'footer-dark' : hideSides }">
-      <div class="footer-top">
+
 
 
       <div class="footer-left">
@@ -96,19 +90,12 @@ cool project you need designed please get in touch!
 
       <div class="footer-right">
         <p>
-          I’m always on the lookout for new projects and people to collaborate with. If you have a
-cool project you need designed please get in touch!
-        </p>
-      </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>
           This site was designed by Keri Wright and coded by <a href="https://susieward.dev">Susie Ward</a>.
       <br />
           <span class="copyright">&copy; 2019  all rights reserved</span>
         </p>
       </div>
+
     </div>
 
 
@@ -125,7 +112,8 @@ data() {
   return {
     isContactOpen: false,
     menuClicked: false,
-    isMenuOpen: false
+    isMenuOpen: false,
+    isAbout: false
   }
 
 },
@@ -168,10 +156,27 @@ navState(){
 
 methods: {
 
+  showAbout: function(){
+    this.isAbout = true;
+  },
+
+  hideAbout: function(){
+    this.isAbout = false
+  },
+
 
   routeHome: function(){
     this.menuClicked = false;
+    this.isAbout = false;
     this.$router.push('/');
+  },
+
+
+  routeAbout: function(){
+    this.menuClicked = false;
+    this.isAbout = true;
+    this.$router.push('/');
+
   },
 
   routeProjects: function(){
@@ -644,15 +649,17 @@ font-family: 'Overpass Mono Bold';
 .footer {
   grid-area: footer;
   display: grid;
-  min-height: 200px;
-  background-color: #FFFCF2;
-  grid-template-rows: 1fr auto;
-  color: #000;
+
+  grid-template-columns: 1fr 1fr;
+  background-color: #000;
+  color: #fff;
   font-family: 'Montserrat Regular';
   font-size: 16px;
   line-height: 24px;
   width: 100vw;
   bottom: 0;
+padding: 30px 50px;
+    margin-top: 150px;
 }
 
 .footer-dark {
@@ -667,24 +674,24 @@ font-family: 'Overpass Mono Bold';
 
 .footer-left {
   display: grid;
-  grid-template-rows: auto auto;
-  align-content: flex-start;
+grid-template-rows: auto auto;
+grid-gap: 10px;
+  align-content: center;
   justify-content: flex-start;
-  padding: 30px 50px;
+
 
 }
 
 .footer-left p {
-
-  padding-bottom: 0;
-  margin-bottom: 0;
+margin: 0;
 }
 
 .footer-right {
   display: grid;
-  padding: 30px 50px;
 
+align-content: center;
     justify-content: flex-end;
+    text-align: right;
 
 }
 
@@ -833,7 +840,8 @@ text-align: right;
     .footer {
         grid-template-rows: auto 1fr;
         min-height: auto;
-
+        grid-template-columns: 1fr;
+padding: 20px 40px;
     }
 
 
@@ -847,13 +855,16 @@ text-align: right;
 
 
     .footer-right {
-        padding: 20px 50px 0px 50px;
+    width: 100%;
+    max-width: 80%;
+    text-align: left;
+    justify-content: flex-start;
 
     }
 
 
     .footer-left {
-      padding: 30px 50px 0px 50px;
+      padding:0;
 
     }
 
