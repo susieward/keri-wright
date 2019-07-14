@@ -233,7 +233,7 @@ border: 1px solid #222;
 
 
       padding-bottom: 0px;
-      border: 1px solid red;
+
   }
 
   .kevin-mobile {
@@ -242,7 +242,6 @@ max-width: 100%;
 max-height: 100%;
 height: auto;
 margin: 0 auto;
-border: 1px solid red;
 
   }
 
